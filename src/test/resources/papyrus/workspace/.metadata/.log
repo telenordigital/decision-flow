@@ -1,0 +1,1866 @@
+!SESSION 2017-07-21 13:36:25.403 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/gorandostanic/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/gorandostanic/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 2 2 2017-07-21 13:41:02.109
+!MESSAGE Invalid preference category path: org.eclipse.papyrus.infra.properties.ui.propertyview (bundle: org.eclipse.papyrus.uml.properties, page: org.eclipse.papyrus.uml.properties.multiplicityEditorProperties)
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.730
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.731
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.731
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.731
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.732
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.732
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.732
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.732
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.732
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.733
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.733
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.733
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.812
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.813
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.814
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.814
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.814
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.814
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.815
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.925
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.925
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.926
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.926
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.927
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.928
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:44.928
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.025
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.026
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.026
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.027
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.027
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.027
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.027
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:49:45.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.ui 4 0 2017-07-21 13:49:45.177
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:285)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:506)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:557)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:377)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:323)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:85)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1097)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4252)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1510)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1539)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1535)
+	at org.eclipse.swt.widgets.Canvas.sendKeyEvent(Canvas.java:518)
+	at org.eclipse.swt.widgets.Control.doCommandBySelector(Control.java:1090)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5889)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSResponder.interpretKeyEvents(NSResponder.java:68)
+	at org.eclipse.swt.widgets.Composite.keyDown(Composite.java:601)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5799)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:228)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2148)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2402)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5861)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5290)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5439)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.CommonDeferredCreateConnectionViewCommand.doExecuteWithResult(CommonDeferredCreateConnectionViewCommand.java:164)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.CommonDeferredCreateConnectionViewCommand.doExecuteWithResult(CommonDeferredCreateConnectionViewCommand.java:130)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy.execute(ICommandProxy.java:68)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.CommandProxy.doExecuteWithResult(CommandProxy.java:50)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy.execute(ICommandProxy.java:68)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.DefaultDiagramPasteCommand.doExecuteWithResult(DefaultDiagramPasteCommand.java:134)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.papyrus.commands.wrappers.GMFtoGEFCommandWrapper.execute(GMFtoGEFCommandWrapper.java:124)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.papyrus.commands.wrappers.GEFtoEMFCommandWrapper.execute(GEFtoEMFCommandWrapper.java:95)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:488)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.doExecute(CheckedOperationHistory.java:206)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.execute(CheckedOperationHistory.java:195)
+	at org.eclipse.papyrus.infra.emf.gmf.command.NotifyingWorkspaceCommandStack.doExecute(NotifyingWorkspaceCommandStack.java:264)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.papyrus.infra.emf.gmf.command.NestingNotifyingWorkspaceCommandStack.execute(NestingNotifyingWorkspaceCommandStack.java:130)
+	at org.eclipse.papyrus.infra.gmfdiag.menu.handlers.AbstractGraphicalCommandHandler.execute(AbstractGraphicalCommandHandler.java:85)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 60 more
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.083
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.084
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.085
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.086
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.086
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.086
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.086
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.150
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.151
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.152
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.153
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:25.153
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.263
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.263
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.264
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.264
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.264
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.264
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.264
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.265
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.265
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.265
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.265
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.265
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.327
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.328
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.329
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.329
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.329
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.329
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.330
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.330
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.330
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.330
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.330
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.331
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.391
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.391
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.392
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.392
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.393
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.393
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.393
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.393
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.393
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.394
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.394
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.394
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.460
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.461
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.462
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.462
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.462
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.462
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.462
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.463
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.463
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.463
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.463
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.463
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.519
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.519
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.520
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.520
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.520
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.521
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.521
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.521
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.521
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.521
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.522
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:50:27.522
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.ui 4 0 2017-07-21 13:50:27.584
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.e4.core.di.InjectionException: org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:65)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:494)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:487)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.workbench.renderers.swt.HandledContributionItem.executeItem(HandledContributionItem.java:431)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.handleWidgetSelection(AbstractContributionItem.java:446)
+	at org.eclipse.e4.ui.workbench.renderers.swt.AbstractContributionItem.lambda$2(AbstractContributionItem.java:472)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1510)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1314)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4081)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4157)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.CommonDeferredCreateConnectionViewCommand.doExecuteWithResult(CommonDeferredCreateConnectionViewCommand.java:164)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.CommonDeferredCreateConnectionViewCommand.doExecuteWithResult(CommonDeferredCreateConnectionViewCommand.java:130)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy.execute(ICommandProxy.java:68)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.CommandProxy.doExecuteWithResult(CommandProxy.java:50)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.gmf.runtime.diagram.ui.commands.ICommandProxy.execute(ICommandProxy.java:68)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.papyrus.infra.gmfdiag.common.commands.DefaultDiagramPasteCommand.doExecuteWithResult(DefaultDiagramPasteCommand.java:134)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.papyrus.commands.wrappers.GMFtoGEFCommandWrapper.execute(GMFtoGEFCommandWrapper.java:124)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.gef.commands.CompoundCommand.execute(CompoundCommand.java:129)
+	at org.eclipse.papyrus.commands.wrappers.GEFtoEMFCommandWrapper.execute(GEFtoEMFCommandWrapper.java:95)
+	at org.eclipse.emf.workspace.EMFCommandOperation.doExecute(EMFCommandOperation.java:119)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:488)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.doExecute(CheckedOperationHistory.java:206)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.execute(CheckedOperationHistory.java:195)
+	at org.eclipse.papyrus.infra.emf.gmf.command.NotifyingWorkspaceCommandStack.doExecute(NotifyingWorkspaceCommandStack.java:264)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:165)
+	at org.eclipse.emf.transaction.impl.AbstractTransactionalCommandStack.execute(AbstractTransactionalCommandStack.java:219)
+	at org.eclipse.papyrus.infra.emf.gmf.command.NestingNotifyingWorkspaceCommandStack.execute(NestingNotifyingWorkspaceCommandStack.java:130)
+	at org.eclipse.papyrus.infra.gmfdiag.menu.handlers.AbstractGraphicalCommandHandler.execute(AbstractGraphicalCommandHandler.java:85)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:291)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	... 40 more
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.954
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.954
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.957
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:14.957
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.026
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.027
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.028
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.029
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.029
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.029
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:15.029
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.955
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:43.956
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.013
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.013
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.014
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.014
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.015
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.015
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.015
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.015
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.015
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.016
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.016
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:52:44.016
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.508
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.setclassifierpropertyowner
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.508
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetClassifierPropertyOwnerAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetClassifierPropertyOwnerAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.509
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.setassociationpropertyowneraction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.509
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetAssociationPropertyOwnerAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetAssociationPropertyOwnerAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.510
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.setnavigablepropertyaction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.511
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNavigablePropertyAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNavigablePropertyAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.512
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.setnonnavigablepropertyaction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.512
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNonNavigablePropertyAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNonNavigablePropertyAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.513
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.SetNoneAggregationPropertyAction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.513
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNoneAggregationPropertyAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetNoneAggregationPropertyAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.514
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.SetCompositePropertyAction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.514
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetCompositePropertyAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetCompositePropertyAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 4 4 2017-07-21 13:53:07.514
+!MESSAGE Could not create action delegate for id: org.eclipse.papyrus.uml.diagram.clazz.SetSharedPropertyAction
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2017-07-21 13:53:07.514
+!MESSAGE Plug-in org.eclipse.papyrus.uml.diagram.clazz was unable to load class org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetSharedPropertyAction.
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.papyrus.uml.diagram.clazz.custom.action.SetSharedPropertyAction cannot be found by org.eclipse.papyrus.uml.diagram.clazz_3.0.0.201706271901
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:484)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:387)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:150)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:564)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:281)
+	at org.eclipse.ui.internal.PluginAction.createDelegate(PluginAction.java:122)
+	at org.eclipse.ui.internal.PluginAction.selectionChanged(PluginAction.java:271)
+	at org.eclipse.ui.internal.PluginAction.<init>(PluginAction.java:112)
+	at org.eclipse.ui.internal.ObjectPluginAction.<init>(ObjectPluginAction.java:91)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:272)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:176)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:103)
+	at org.eclipse.ui.internal.ObjectActionContributor.createActionDescriptor(ObjectActionContributor.java:198)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:161)
+	at org.eclipse.ui.internal.ObjectActionContributor.readElement(ObjectActionContributor.java:274)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:129)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:118)
+	at org.eclipse.ui.internal.ObjectActionContributor.readConfigElement(ObjectActionContributor.java:247)
+	at org.eclipse.ui.internal.ObjectActionContributor.isApplicableTo(ObjectActionContributor.java:213)
+	at org.eclipse.ui.internal.ObjectContributorManager.isApplicableTo(ObjectContributorManager.java:301)
+	at org.eclipse.ui.internal.ObjectActionContributorManager.contributeObjectActions(ObjectActionContributorManager.java:89)
+	at org.eclipse.ui.internal.PopupMenuExtender.addObjectActions(PopupMenuExtender.java:317)
+	at org.eclipse.ui.internal.PopupMenuExtender.menuAboutToShow(PopupMenuExtender.java:394)
+	at org.eclipse.jface.action.MenuManager.fireAboutToShow(MenuManager.java:339)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:470)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.193
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.193
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.196
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.197
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.197
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.197
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.198
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.198
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.198
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.199
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.199
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.199
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.273
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.274
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.275
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:54:41.275
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.586
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.587
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.587
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.588
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.588
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.588
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.588
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.589
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.589
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.589
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.589
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.589
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.682
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.683
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.683
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.683
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.685
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:56:03.685
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.171
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.174
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.174
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.178
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.178
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.184
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.185
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.193
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.200
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.200
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.207
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.208
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.269
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.269
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.271
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.271
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.271
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.271
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.271
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 13:57:40.272
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.684
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.685
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.686
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.686
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.686
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.686
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.686
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.687
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.687
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.687
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.687
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.688
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.745
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.745
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.746
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.746
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.papyrus.uml.diagram.common 1 0 2017-07-21 14:02:02.747
+!MESSAGE animals is missing
+
+!ENTRY org.eclipse.gmf.runtime.diagram.ui 4 4 2017-07-21 14:04:31.636
+!MESSAGE execute
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Can't open diagram
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:113)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:488)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.doExecute(CheckedOperationHistory.java:206)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.execute(CheckedOperationHistory.java:195)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:206)
+	at org.eclipse.papyrus.commands.CheckedDiagramCommandStack.execute(CheckedDiagramCommandStack.java:53)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:156)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.performRequest(GraphicalEditPart.java:1125)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:206)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:148)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDoubleClick(DragEditPartsTrackerEx.java:257)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDoubleClick(AbstractTool.java:1065)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1510)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1314)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4081)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3698)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: org.eclipse.ui.PartInitException: Unable to open editor, unknown editor ID: 'org.eclipse.papyrus.uml.diagram.statemachine.part.UMLDiagramEditorID'
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:110)
+	... 49 more
+
+!ENTRY org.eclipse.gmf.runtime.diagram.ui 4 4 2017-07-21 14:04:32.510
+!MESSAGE execute
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Can't open diagram
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:113)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:488)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.doExecute(CheckedOperationHistory.java:206)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.execute(CheckedOperationHistory.java:195)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:206)
+	at org.eclipse.papyrus.commands.CheckedDiagramCommandStack.execute(CheckedDiagramCommandStack.java:53)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:156)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.performRequest(GraphicalEditPart.java:1125)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:206)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:148)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDoubleClick(DragEditPartsTrackerEx.java:257)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDoubleClick(AbstractTool.java:1065)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1510)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1314)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4081)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3698)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: org.eclipse.ui.PartInitException: Unable to open editor, unknown editor ID: 'org.eclipse.papyrus.uml.diagram.statemachine.part.UMLDiagramEditorID'
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:110)
+	... 49 more
+
+!ENTRY org.eclipse.gmf.runtime.diagram.ui 4 4 2017-07-21 14:28:28.996
+!MESSAGE execute
+!STACK 0
+org.eclipse.core.commands.ExecutionException: Can't open diagram
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:113)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.emf.workspace.AbstractEMFOperation.execute(AbstractEMFOperation.java:150)
+	at org.eclipse.gmf.runtime.common.core.command.CompositeCommand.doExecuteWithResult(CompositeCommand.java:403)
+	at org.eclipse.gmf.runtime.common.core.command.AbstractCommand.execute(AbstractCommand.java:134)
+	at org.eclipse.core.commands.operations.DefaultOperationHistory.execute(DefaultOperationHistory.java:488)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.doExecute(CheckedOperationHistory.java:206)
+	at org.eclipse.papyrus.infra.emf.gmf.command.CheckedOperationHistory.execute(CheckedOperationHistory.java:195)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:206)
+	at org.eclipse.papyrus.commands.CheckedDiagramCommandStack.execute(CheckedDiagramCommandStack.java:53)
+	at org.eclipse.gmf.runtime.diagram.ui.parts.DiagramCommandStack.execute(DiagramCommandStack.java:156)
+	at org.eclipse.gmf.runtime.diagram.ui.editparts.GraphicalEditPart.performRequest(GraphicalEditPart.java:1125)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.performOpen(SelectEditPartTracker.java:206)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.SelectEditPartTracker.handleDoubleClick(SelectEditPartTracker.java:148)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.DragEditPartsTrackerEx.handleDoubleClick(DragEditPartsTrackerEx.java:257)
+	at org.eclipse.papyrus.infra.gmfdiag.common.snap.copy.AbstractTool.mouseDoubleClick(AbstractTool.java:1065)
+	at org.eclipse.gef.tools.SelectionTool.mouseDoubleClick(SelectionTool.java:527)
+	at org.eclipse.gef.EditDomain.mouseDoubleClick(EditDomain.java:231)
+	at org.eclipse.gef.ui.parts.DomainEventDispatcher.dispatchMouseDoubleClicked(DomainEventDispatcher.java:291)
+	at org.eclipse.draw2d.LightweightSystem$EventHandler.mouseDoubleClick(LightweightSystem.java:518)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:197)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1510)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1314)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4081)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3698)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: org.eclipse.ui.PartInitException: Unable to open editor, unknown editor ID: 'org.eclipse.papyrus.uml.diagram.statemachine.part.UMLDiagramEditorID'
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3205)
+	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3098)
+	at org.eclipse.papyrus.uml.diagram.statemachine.edit.policies.OpenDiagramEditPolicy$OpenDiagramCommand.doExecuteWithResult(OpenDiagramEditPolicy.java:110)
+	... 49 more
+!SESSION 2017-07-22 20:55:22.830 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/gorandostanic/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/gorandostanic/Documents/telenor/decision-flow/src/test/resources/papyrus/workspace -keyring /Users/gorandostanic/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 4 0 2017-07-22 20:56:51.042
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4533)
+	at org.eclipse.swt.SWT.error(SWT.java:4448)
+	at org.eclipse.swt.SWT.error(SWT.java:4419)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:800)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:589)
+	at org.eclipse.swt.widgets.Control.setBackground(Control.java:3577)
+	at org.eclipse.papyrus.infra.widgets.editors.StringEditor$2$1.run(StringEditor.java:445)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4033)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700)
+	at org.eclipse.papyrus.infra.services.validation.commands.AbstractValidateCommand.flushDisplayEvents(AbstractValidateCommand.java:264)
+	at org.eclipse.papyrus.infra.services.validation.commands.AbstractValidateCommand.handleDiagnostic(AbstractValidateCommand.java:249)
+	at org.eclipse.papyrus.infra.services.validation.commands.AbstractValidateCommand$1.run(AbstractValidateCommand.java:148)
+	at org.eclipse.ui.actions.WorkspaceModifyDelegatingOperation.execute(WorkspaceModifyDelegatingOperation.java:68)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:107)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:128)
+	at org.eclipse.papyrus.infra.services.validation.commands.AbstractValidateCommand.runValidation(AbstractValidateCommand.java:200)
+	at org.eclipse.papyrus.infra.services.validation.commands.ValidateSubtreeCommand.doExecuteWithResult(ValidateSubtreeCommand.java:60)
+	at org.eclipse.gmf.runtime.emf.commands.core.command.AbstractTransactionalCommand.doExecute(AbstractTransactionalCommand.java:247)
+	at org.eclipse.papyrus.infra.services.validation.commands.AsyncValidateSubtreeCommand.asyncDoExecute(AsyncValidateSubtreeCommand.java:69)
+	at org.eclipse.papyrus.infra.services.validation.commands.AsyncValidateSubtreeCommand$1.run(AsyncValidateSubtreeCommand.java:61)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:37)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:182)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4033)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3700)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.ui 2 2 2017-07-23 02:11:22.048
+!MESSAGE Invalid preference category path: org.eclipse.papyrus.infra.properties.ui.propertyview (bundle: org.eclipse.papyrus.uml.properties, page: org.eclipse.papyrus.uml.properties.multiplicityEditorProperties)
+!SESSION 2017-07-23 03:42:06.154 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_65
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/gorandostanic/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/gorandostanic/telenor/decision-flow/src/test/resources/papyrus/workspace -keyring /Users/gorandostanic/.eclipse_keyring
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-07-23 03:42:10.557
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 2 2017-07-23 18:17:45.081
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: /Users/gorandostanic/telenor/decision-flow/src/test/resources/papyrus/workspace/.metadata/.plugins/org.eclipse.pde.core/.p2/org.eclipse.equinox.p2.engine/profileRegistry.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.restore(SimpleProfileRegistry.java:520)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfileMap(SimpleProfileRegistry.java:374)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfiles(SimpleProfileRegistry.java:356)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:176)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:283)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:389)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:201)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1186)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+
+!ENTRY org.eclipse.ui.ide 4 4 2017-07-23 18:17:50.018
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2017-07-23 18:17:50.018
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 566 2017-07-23 18:17:50.018
+!MESSAGE Problems occurred during save.
+!STACK 0
+java.lang.IllegalStateException: Registry Directory not available: /Users/gorandostanic/telenor/decision-flow/src/test/resources/papyrus/workspace/.metadata/.plugins/org.eclipse.pde.core/.p2/org.eclipse.equinox.p2.engine/profileRegistry.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.restore(SimpleProfileRegistry.java:520)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfileMap(SimpleProfileRegistry.java:374)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfiles(SimpleProfileRegistry.java:356)
+	at org.eclipse.pde.internal.core.target.P2TargetUtils.cleanOrphanedTargetDefinitionProfiles(P2TargetUtils.java:176)
+	at org.eclipse.pde.internal.core.PDECore$1.saving(PDECore.java:283)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:389)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:201)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1186)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:526)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)

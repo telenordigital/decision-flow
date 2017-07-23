@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:zoo="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0" xsi:schemaLocation="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0 zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA">
+  <uml:Model xmi:id="_czqhQG4KEeeB__kC6w5TrA" name="zoo">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_c0BGkG4KEeeB__kC6w5TrA" name="DecisionFlow">
+      <region xmi:type="uml:Region" xmi:id="_c0UokG4KEeeB__kC6w5TrA" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_Q0Q6kG4LEeeB__kC6w5TrA" source="_CdMuYG4LEeeB__kC6w5TrA" target="_Gx5dwG4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_cKvqoG4LEeeB__kC6w5TrA" name="water" source="_Gx5dwG4LEeeB__kC6w5TrA" target="_YP3wgG4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_Jw2swG4MEeeB__kC6w5TrA" name="heavy" source="_YP3wgG4LEeeB__kC6w5TrA" target="_y48g4G4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_lx9AAG4MEeeB__kC6w5TrA" source="_y48g4G4LEeeB__kC6w5TrA" target="_d0rAYG4MEeeB__kC6w5TrA"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_CdMuYG4LEeeB__kC6w5TrA" name="Init"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_Gx5dwG4LEeeB__kC6w5TrA" name="environment" kind="choice"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_YP3wgG4LEeeB__kC6w5TrA" name="weight" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_y48g4G4LEeeB__kC6w5TrA" name="BlueWhale"/>
+        <subvertex xmi:type="uml:State" xmi:id="_d0rAYG4MEeeB__kC6w5TrA" name="WhaleShark"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ChXnR24MEeeB__kC6w5TrA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChY1YG4MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="zoo.profile.uml#_ChFTYG4MEeeB__kC6w5TrA"/>
+    </profileApplication>
+  </uml:Model>
+  <zoo:Animal xmi:id="_ChaqkG4MEeeB__kC6w5TrA" base_State="_y48g4G4LEeeB__kC6w5TrA" description="The largest anymal on Earth"/>
+  <zoo:Animal xmi:id="_d0tcoG4MEeeB__kC6w5TrA" base_State="_d0rAYG4MEeeB__kC6w5TrA" description="The largest anymal on Earth"/>
+</xmi:XMI>

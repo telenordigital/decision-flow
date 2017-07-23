@@ -1,0 +1,6 @@
+#Fri Jul 21 14:05:52 CEST 2017
+_label_zoo__DecisionFlow__Region1__WhaleShark=getAnimal("WHALE_SHARK")
+_label_zoo__DecisionFlow__Region1__weight=weight > 45000
+_label_zoo__DecisionFlow__Region1__BlueWhale=getAnimal("BLUE_WHALE")
+_label_zoo__DecisionFlow__Region1__water=getEnvironment("WATER")
+_label_zoo__DecisionFlow__Region1__heavy=true
