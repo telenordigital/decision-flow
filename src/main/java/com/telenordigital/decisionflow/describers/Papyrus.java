@@ -128,8 +128,8 @@ public class Papyrus implements DecisionFlowDescriber {
         }
     }
 
-    private Map<String, Map<String, String>> getAttributeMaps(XPath xPath,
-            InputSource inputSource) {
+    private Map<String, Map<String, String>> getAttributeMaps(final XPath xPath,
+            final InputSource inputSource) {
         final Map<String, Map<String, String>> attrMaps = new HashMap<>();
         NodeList elements = null;
         try {
@@ -176,8 +176,8 @@ public class Papyrus implements DecisionFlowDescriber {
         }
         final Properties properties = new Properties();
         for (final Entry<Object, Object> entry : origProperties.entrySet()) {
-            String[] __split = entry.getKey().toString().split("__");
-            properties.put(__split[__split.length - 1], entry.getValue().toString());
+            String[] split = entry.getKey().toString().split("__");
+            properties.put(split[split.length - 1], entry.getValue().toString());
         }
         return properties;
     }
@@ -191,12 +191,15 @@ public class Papyrus implements DecisionFlowDescriber {
         final NamespaceContext nsContext = new NamespaceContext() {
             @SuppressWarnings("rawtypes")
             @Override
-            public Iterator getPrefixes(String namespaceURI) {return null;}
+            public Iterator getPrefixes(final String namespaceURI) {
+                return null;
+            }
             @Override
-            public String getPrefix(String namespaceURI) {return null;}
-
+            public String getPrefix(final String namespaceURI) {
+                return null;
+            }
             @Override
-            public String getNamespaceURI(String prefix) {
+            public String getNamespaceURI(final String prefix) {
                 return nsMap.get(prefix);
             }
         };
@@ -205,7 +208,7 @@ public class Papyrus implements DecisionFlowDescriber {
         return xPath;
     }
 
-    private static String eval(XPath xPath, String query, Node node) {
+    private static String eval(final XPath xPath, final String query, final Node node) {
         try {
             String result = xPath.evaluate(query, node);
             return (result == null) ? null : (result.isEmpty() ? null : result);

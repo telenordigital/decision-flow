@@ -207,7 +207,11 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
         if (defaultArrow != null) {
             accPath.add(defaultArrow);
-            getDecisions(context, defaultArrow.getDestination(), accDecisions, accPath, stopAtFirstFound);
+            getDecisions(context,
+                         defaultArrow.getDestination(),
+                         accDecisions,
+                         accPath,
+                         stopAtFirstFound);
         }
     }
 
