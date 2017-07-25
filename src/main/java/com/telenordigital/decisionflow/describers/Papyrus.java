@@ -44,8 +44,9 @@ public class Papyrus implements DecisionFlowDescriber {
         final Properties properties = getProperties(umlFilePath);
         final XPath xPath = getXPath();
         final InputSource inputSource = new InputSource(umlFilePath);
-        final Map<String, Map<String, String>> attrMaps =
-                getAttributeMaps(xPath, inputSource);
+        Map<String, Map<String, String>> attrMaps = new HashMap<>();
+        Map<String, List<String>> stereotypeMap = new HashMap<>();
+        processStereotypes(xPath, inputSource, attrMaps, stereotypeMap);
         final String query = "//subvertex | //transition";
         final List<String> namesWithLabels = new ArrayList<>();
         NodeList elements = null;
@@ -124,13 +125,28 @@ public class Papyrus implements DecisionFlowDescriber {
                 public String getDestinationNodeId() {
                     return eval(xPath, "@target", node);
                 }
+                @Override
+                public boolean isDefault() {
+                    if (isObligatory()) {
+                        return false;
+                    }
+                    return getExpression() == null || getExpression().isEmpty();
+                }
+                @Override
+                public boolean isObligatory() {
+                    return (stereotypeMap.get(getId()) == null)
+                            ? false
+                            : stereotypeMap.get(getId()).contains("always");
+                }
             });
         }
     }
 
-    private Map<String, Map<String, String>> getAttributeMaps(final XPath xPath,
-            final InputSource inputSource) {
-        final Map<String, Map<String, String>> attrMaps = new HashMap<>();
+    private void processStereotypes(
+            final XPath xPath,
+            final InputSource inputSource,
+            final Map<String, Map<String, String>> attrMaps,
+            final Map<String, List<String>> stereotypeMap) {
         NodeList elements = null;
         try {
             elements = (NodeList) xPath.evaluate("/xmi:XMI/*",
@@ -155,8 +171,20 @@ public class Papyrus implements DecisionFlowDescriber {
                     attrMaps.put(baseState, attrs);
                 }
             }
+            final String baseTransition = eval(xPath, "@base_Transition", node);
+            if (baseTransition != null && !baseTransition.isEmpty()) {
+                final String nodeName = node.getNodeName();
+                final String[] profileAndStereotype = nodeName.split(":");
+                if (profileAndStereotype.length == 2) {
+                    List<String> stereotypes = stereotypeMap.get(baseState);
+                    if (stereotypes == null) {
+                        stereotypes = new ArrayList<>();
+                        stereotypeMap.put(baseTransition, stereotypes);
+                    }
+                    stereotypes.add(profileAndStereotype[1]);
+                }
+            }
         }
-        return attrMaps;
     }
 
     private static Properties getProperties(final String umlFilePath) {

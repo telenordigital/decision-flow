@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:zoo="http:///schemas/zoo/_Dzbq0HEnEeedLtR2afHFEg/1" xsi:schemaLocation="http:///schemas/zoo/_Dzbq0HEnEeedLtR2afHFEg/1 zoo.profile.uml#_DzeHEHEnEeedLtR2afHFEg">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:zoo="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0" xsi:schemaLocation="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0 zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA">
   <uml:Model xmi:id="_czqhQG4KEeeB__kC6w5TrA" name="zoo">
     <packagedElement xmi:type="uml:StateMachine" xmi:id="_c0BGkG4KEeeB__kC6w5TrA" name="DecisionFlow">
       <region xmi:type="uml:Region" xmi:id="_c0UokG4KEeeB__kC6w5TrA" name="Region1">
@@ -39,7 +39,6 @@
         <transition xmi:type="uml:Transition" xmi:id="_4d8mYG8PEeeaCMh41ihWaA" source="_aQ4K0G8PEeeaCMh41ihWaA" target="_pp4VIG8PEeeaCMh41ihWaA"/>
         <transition xmi:type="uml:Transition" xmi:id="_YQI68G83EeeaCMh41ihWaA" source="_8TbFAG4QEeeB__kC6w5TrA" target="_HS7L4G83EeeaCMh41ihWaA"/>
         <transition xmi:type="uml:Transition" xmi:id="_bhhzMG83EeeaCMh41ihWaA" name="flyerCanDive" source="_HS7L4G83EeeaCMh41ihWaA" target="_QPhTcG83EeeaCMh41ihWaA"/>
-        <transition xmi:type="uml:Transition" xmi:id="__MfU4HEmEeedLtR2afHFEg" source="_vQv44G4QEeeB__kC6w5TrA" target="_G4a7QHEmEeedLtR2afHFEg"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_CdMuYG4LEeeB__kC6w5TrA" name="Init"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_Gx5dwG4LEeeB__kC6w5TrA" name="environment" kind="choice"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_YP3wgG4LEeeB__kC6w5TrA" name="weight" kind="choice"/>
@@ -64,12 +63,11 @@
         <subvertex xmi:type="uml:State" xmi:id="_pp4VIG8PEeeaCMh41ihWaA" name="bat"/>
         <subvertex xmi:type="uml:Pseudostate" xmi:id="_HS7L4G83EeeaCMh41ihWaA" name="nonFlyerCanDive" kind="choice"/>
         <subvertex xmi:type="uml:State" xmi:id="_QPhTcG83EeeaCMh41ihWaA" name="pinguin"/>
-        <subvertex xmi:type="uml:State" xmi:id="_G4a7QHEmEeedLtR2afHFEg" name="cockatoo"/>
       </region>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ChXnR24MEeeB__kC6w5TrA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChY1YG4MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="zoo.profile.uml#_DzeHEHEnEeedLtR2afHFEg"/>
+        <references xmi:type="ecore:EPackage" href="zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="zoo.profile.uml#_ChFTYG4MEeeB__kC6w5TrA"/>
     </profileApplication>
@@ -89,6 +87,4 @@
   <zoo:Animal xmi:id="_nD1f8G8PEeeaCMh41ihWaA" base_State="_aQ4K0G8PEeeaCMh41ihWaA" legCount="4" description=""/>
   <zoo:Animal xmi:id="_z9c2sG8PEeeaCMh41ihWaA" base_State="_pp4VIG8PEeeaCMh41ihWaA" legCount="4"/>
   <zoo:Animal xmi:id="_VnoAkG83EeeaCMh41ihWaA" base_State="_QPhTcG83EeeaCMh41ihWaA" legCount="2"/>
-  <zoo:Animal xmi:id="_4NqhkHEmEeedLtR2afHFEg" base_State="_G4a7QHEmEeedLtR2afHFEg" legCount="2" description="Demonstrating &lt;&lt;always>> stereotype"/>
-  <zoo:always xmi:id="_Dzq7YHEnEeedLtR2afHFEg" base_Transition="__MfU4HEmEeedLtR2afHFEg"/>
 </xmi:XMI>

@@ -14,7 +14,7 @@ public class ZooTest {
     enum AnimalClass {MAMMAL, BIRD, OTHER}
     enum AnimalOrder {PRIMATE, RODENT, OTHER}
     enum Animal {GORILLA, COBRA, HUMAN, OSTRICH, TARANTULA, SEAGULL,
-        BLUE_WHALE, WHALE_SHARK, RAT, EAGLE, LEMUR, ELEPHANT, BAT, TIGER, PENGUIN}
+        BLUE_WHALE, WHALE_SHARK, RAT, EAGLE, LEMUR, ELEPHANT, BAT, TIGER, PENGUIN, COCKATOO}
 
     static class AnimalDescription {
         private Environment environment;
@@ -266,12 +266,12 @@ public class ZooTest {
                         50000,
                         false, false, true, false, false, false);
         Decision<Animal> decision = ZOO_FLOW.getDecision(eagle);
-        assertThat(decision.getPayload(), equalTo(Animal.EAGLE));
+        assertThat(
+                Animal.EAGLE.equals(decision.getPayload())
+                || Animal.COCKATOO.equals(decision.getPayload()), equalTo(true));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
-        assertThat(decision.getAttributes().get("description"),
-                equalTo(null));
         List<Decision<Animal>> decisions = ZOO_FLOW.getDecisions(eagle);
-        assertThat(decisions.size(), equalTo(1));
+        assertThat(decisions.size(), equalTo(2));
         assertThat(
                 decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
                     containsAll(Arrays.asList(Animal.EAGLE)),

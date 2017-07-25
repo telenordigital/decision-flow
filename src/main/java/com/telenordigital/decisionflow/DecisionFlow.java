@@ -113,6 +113,9 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             final String xpr = arrowDescriptor.getExpression();
             final Arrow arrow = new Arrow(
                     arrowDescriptor.getId(),
+                    arrowDescriptor.isDefault()
+                        ? ArrowType.DEFAULT
+                        : (arrowDescriptor.isObligatory() ? ArrowType.OBLIGATORY : ArrowType.ORDINARY),
                     arrowDescriptor.getName(),
                     arrowDescriptor.getAttributes(),
                     (xpr == null || xpr.isEmpty()) ? null : xpr, dstNode);
@@ -182,8 +185,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             switchExprResult = ((Switch) currentNode).getParsedExpression().getValue(context);
         }
         for (Arrow arrow : currentNode.getArrows()) {
-            final String xpr = arrow.getExpression();
-            if (xpr == null) {
+            switch (arrow.arrowType) {
+            case DEFAULT:
                 if (defaultArrow != null) {
                     throw new DecisionFlowException(
                             String.format(
@@ -191,7 +194,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                                     currentNode.getName()));
                 }
                 defaultArrow = arrow;
-            } else {
+                break;
+            case ORDINARY:
                 final Object arrowExprResult = arrow.getParsedExpression().getValue(context);
                 if (areEqual(switchExprResult, arrowExprResult)) {
                     accPath.add(arrow);
@@ -203,6 +207,15 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                             stopAtFirstFound);
                     return;
                 }
+                break;
+            case OBLIGATORY:
+                accPath.add(arrow);
+                getDecisions(
+                        context,
+                        arrow.getDestination(),
+                        accDecisions,
+                        accPath,
+                        stopAtFirstFound);
             }
         }
         if (defaultArrow != null) {
@@ -359,15 +372,19 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
     }
 
+    private enum ArrowType {ORDINARY, DEFAULT, OBLIGATORY};
     private static class Arrow extends AbstractElement implements ElementWithExpression{
         private final ExpressionHolder expressionHolder;
         private final AbstractNode destination;
+        private final ArrowType arrowType;
         Arrow(final String id,
+              final ArrowType arrowType,
               final String name,
               final Map<String, String> attributes,
               final String expression,
               final AbstractNode destination) {
             super(id, name, attributes);
+            this.arrowType = arrowType;
             this.destination = destination;
             this.expressionHolder = new ExpressionHolder(expression);
         }
@@ -382,6 +399,10 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         @Override
         public Expression getParsedExpression() {
             return expressionHolder.getParsedExpression();
+        }
+
+        public ArrowType getArrowType() {
+            return arrowType;
         }
     }
 

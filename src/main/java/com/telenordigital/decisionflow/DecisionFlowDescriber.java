@@ -25,5 +25,7 @@ public interface DecisionFlowDescriber {
         String getExpression();
         String getSourceNodeId();
         String getDestinationNodeId();
+        boolean isDefault();
+        boolean isObligatory();
     }
 }
