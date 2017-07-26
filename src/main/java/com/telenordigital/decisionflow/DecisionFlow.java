@@ -294,6 +294,21 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         public Map<String, String> getAttributes() {
             return attributes;
         }
+
+        @Override
+        public String toString() {
+            final String name = getName();
+            String expression = null;
+            if (this instanceof ElementWithExpression) {
+                expression = ((ElementWithExpression) this).getExpression();
+            }
+            if (name != null && name.equals(expression)) {
+                expression = null;
+            }
+            return getClass().getSimpleName()
+                    + ((name != null) ? ":" + name : "")
+                    + ((expression != null) ? ":" + expression : "");
+        }
     }
 
     private abstract static class AbstractNode extends AbstractElement implements Node {
