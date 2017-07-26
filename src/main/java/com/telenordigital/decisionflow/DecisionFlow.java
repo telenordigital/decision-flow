@@ -4,6 +4,8 @@ import com.telenordigital.decisionflow.DecisionFlowDescriber.Callback;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementDescriptor;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,14 +17,25 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private InitialNode initialNode = null;
     private final Map<String, AbstractNode> nodeMap = new HashMap<>();
+    private boolean skipLoopDetection = false;
 
     private DecisionFlow(final DecisionFlowDescriber describer) {
         load(describer);
     }
 
-    public static <C, P> DecisionFlow<C, P> getInstance(
-            final DecisionFlowDescriber describer) {
+    private DecisionFlow(final DecisionFlowDescriber describer, boolean skipLoopDetection) {
+        this.skipLoopDetection = skipLoopDetection;
+        load(describer);
+    }
+
+    public static <C, P> DecisionFlow<C, P> getInstance(final DecisionFlowDescriber describer) {
         return new DecisionFlow<>(describer);
+    }
+
+    public static <C, P> DecisionFlow<C, P> getInstance(
+            final DecisionFlowDescriber describer,
+            final boolean skipLoopDetection) {
+        return new DecisionFlow<>(describer, skipLoopDetection);
     }
 
     @Override
@@ -121,6 +134,14 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                     (xpr == null || xpr.isEmpty()) ? null : xpr, dstNode);
             srcNode.arrows.add(arrow);
         }
+        for (AbstractNode node : nodeMap.values()) {
+            Collections.sort(node.arrows, new Comparator<Arrow>() {
+                @Override
+                public int compare(Arrow o1, Arrow o2) {
+                    return o1.getArrowType().ordinal() - o2.getArrowType().ordinal();
+                }
+            });
+        }
     }
 
     private List<Decision<P>> getDecisions(
@@ -139,7 +160,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             final List<DecisionPathElement> accPath,
             final boolean stopAtFirstFound) {
 
-        if (accPath.contains(currentNode)) {
+        if (!skipLoopDetection && accPath.contains(currentNode)) {
             throw new DecisionFlowException(
                     String.format("Loops detected in the decision flow (%s)",
                             currentNode.getName()));
@@ -305,7 +326,13 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             if (name != null && name.equals(expression)) {
                 expression = null;
             }
-            return getClass().getSimpleName()
+            String kind = getClass().getSimpleName();
+            if (this instanceof Arrow) {
+                if (ArrowType.OBLIGATORY.equals(((Arrow) this).getArrowType())) {
+                    kind = kind + "(always)";
+                }
+            }
+            return kind
                     + ((name != null) ? ":" + name : "")
                     + ((expression != null) ? ":" + expression : "");
         }
@@ -387,7 +414,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
     }
 
-    private enum ArrowType {ORDINARY, DEFAULT, OBLIGATORY};
+    private enum ArrowType {DEFAULT, OBLIGATORY, ORDINARY};
     private static class Arrow extends AbstractElement implements ElementWithExpression{
         private final ExpressionHolder expressionHolder;
         private final AbstractNode destination;
