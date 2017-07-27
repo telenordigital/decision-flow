@@ -286,15 +286,15 @@ public class ZooTest {
                         50000,
                         false, true, true, false, false, false);
         Decision<Animal> decision = ZOO_FLOW.getDecision(seagull);
-        assertThat(decision.getPayload(), equalTo(Animal.SEAGULL));
+        assertThat(decision.getPayload(), equalTo(Animal.COCKATOO));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         assertThat(decision.getAttributes().get("description"),
-                equalTo("An irritating bird"));
+                equalTo("Demonstrating <<always>> stereotype"));
         List<Decision<Animal>> decisions = ZOO_FLOW.getDecisions(seagull);
-        assertThat(decisions.size(), equalTo(1));
+        assertThat(decisions.size(), equalTo(2));
         assertThat(
                 decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.SEAGULL)),
+                    containsAll(Arrays.asList(Animal.SEAGULL, Animal.COCKATOO)),
                 equalTo(true));
     }
 }

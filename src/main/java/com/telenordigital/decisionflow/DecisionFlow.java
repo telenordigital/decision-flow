@@ -188,7 +188,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 @Override
                 @SuppressWarnings("unchecked")
                 public P getPayload() {
-                    return (P) ((Target) currentNode).getParsedExpression().getValue(context);
+                    return (P) eval(context, ((Target) currentNode).getExpressionHolder());
                 }
 
                 @Override
@@ -203,7 +203,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         Arrow defaultArrow = null;
         Object switchExprResult = null;
         if (currentNode instanceof Switch) {
-            switchExprResult = ((Switch) currentNode).getParsedExpression().getValue(context);
+            switchExprResult = eval(context, ((Switch) currentNode).getExpressionHolder());
         }
         for (Arrow arrow : currentNode.getArrows()) {
             switch (arrow.arrowType) {
@@ -217,7 +217,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 defaultArrow = arrow;
                 break;
             case ORDINARY:
-                final Object arrowExprResult = arrow.getParsedExpression().getValue(context);
+                final Object arrowExprResult = eval(context, arrow.getExpressionHolder());
                 if (areEqual(switchExprResult, arrowExprResult)) {
                     accPath.add(arrow);
                     getDecisions(
@@ -277,9 +277,12 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         return attributes;
     }
 
-    private interface ElementWithExpression {
-        String getExpression();
-        Expression getParsedExpression();
+    private Object eval(C context, ExpressionHolder expressionHolder) {
+        return expressionHolder.getParsedExpression().getValue(context);
+    }
+
+    private interface ElementWithExpressionHolder {
+        ExpressionHolder getExpressionHolder();
     }
 
     private interface Node {
@@ -320,8 +323,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         public String toString() {
             final String name = getName();
             String expression = null;
-            if (this instanceof ElementWithExpression) {
-                expression = ((ElementWithExpression) this).getExpression();
+            if (this instanceof ElementWithExpressionHolder) {
+                expression = ((ElementWithExpressionHolder) this).getExpressionHolder().getExpression();
             }
             if (name != null && name.equals(expression)) {
                 expression = null;
@@ -362,7 +365,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
     }
 
-    private static class ExpressionHolder implements ElementWithExpression {
+    private static class ExpressionHolder {
         private static final ExpressionParser EXPRESSION_PARSER =
                 new SpelExpressionParser();
 
@@ -373,18 +376,16 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             parsedExpression = EXPRESSION_PARSER.parseExpression(expression);
         }
 
-        @Override
         public String getExpression() {
             return expression;
         }
 
-        @Override
         public Expression getParsedExpression() {
             return parsedExpression;
         }
     }
 
-    private static class Switch extends AbstractNode implements ElementWithExpression {
+    private static class Switch extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
         Switch(final String id,
                final String name,
@@ -395,13 +396,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
 
         @Override
-        public String getExpression() {
-            return expressionHolder.getExpression();
-        }
-
-        @Override
-        public Expression getParsedExpression() {
-            return expressionHolder.getParsedExpression();
+        public ExpressionHolder getExpressionHolder() {
+            return expressionHolder;
         }
     }
 
@@ -415,7 +411,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     }
 
     private enum ArrowType {DEFAULT, OBLIGATORY, ORDINARY};
-    private static class Arrow extends AbstractElement implements ElementWithExpression{
+    private static class Arrow extends AbstractElement implements ElementWithExpressionHolder{
         private final ExpressionHolder expressionHolder;
         private final AbstractNode destination;
         private final ArrowType arrowType;
@@ -435,12 +431,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             return destination;
         }
         @Override
-        public String getExpression() {
-            return expressionHolder.getExpression();
-        }
-        @Override
-        public Expression getParsedExpression() {
-            return expressionHolder.getParsedExpression();
+        public ExpressionHolder getExpressionHolder() {
+            return expressionHolder;
         }
 
         public ArrowType getArrowType() {
@@ -448,7 +440,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
     }
 
-    private static class Target extends AbstractNode implements ElementWithExpression {
+    private static class Target extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
         Target(final String id,
                final String name,
@@ -459,13 +451,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
 
         @Override
-        public String getExpression() {
-            return expressionHolder.getExpression();
-        }
-
-        @Override
-        public Expression getParsedExpression() {
-            return expressionHolder.getParsedExpression();
+        public ExpressionHolder getExpressionHolder() {
+            return expressionHolder;
         }
     }
 }
