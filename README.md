@@ -4,6 +4,7 @@
 * [The Zoo Example](#the-zoo-example)
 * [Usage](#usage)
 * [Papyrus UML Tool](#papyrus-uml-tool)
+* [Visual Paradigm](#visual-paradigm)
 
 The purpose of this Java library is to facilitate developing systems that make dynamic 
 (runtime) decisions without too much of hard-coding.
@@ -15,14 +16,15 @@ methods that have a say in your decision making.
 2. Create a state-machine like diagram that describes your decision making in detail. This 
 is normally done with the help of a UML tool, using expressions that involve the properties 
 and the methods from your context class.
-3. If you are OK with using Papyrus as the tool of choice in 2, skip this step. Otherwise, 
-implement DecisionFlowDescriber interface in order to "teach" the library to load the 
-diagram created in 2.
+3. If you are OK with using Papyrus or Visual Paradigm as the tool of choice in 2, skip 
+this step. Otherwise, implement DecisionFlowDescriber interface in order to "teach" the 
+library to load the diagram created in 2.
 4. Create an instance of DecisionFlow with the help of the instance created in 3.
 5. Invoke getDecision() (or getDecisions()) method with an instance of your context class 
 as the only parameter.
 6. Consume decision(s) returned by getDecision(s)(). 
-7. To make the consumption of the decisions more fine-grained, you may want to invoke Decision.getAttributes() for additional information stored in your diagram.
+7. To make the consumption of the decisions more fine-grained, you may want to invoke 
+Decision.getAttributes() for additional information stored in your diagram.
  
 > (Regarding 7) Attribute values will be attempted computed as expressions within
 the context from 1. If the computation is unsuccessful, they will be returned as plain 
@@ -112,3 +114,25 @@ exception.
 attributes will be made consumable by the caller of getDecision(s)().
 
 Please refer to the Zoo example diagram for further details.
+
+## Visual Paradigm
+
+Besides Papyrus, the library supports Visual Paradigm as well. In order to use Visual 
+Paradigm, you have to adhere to the rules similar to those of Papyrus'. There are some 
+differences, though.
+
+1. Don't use labels to declare expressions. Use element names instead. This applies to 
+Choice, Transition and State elements.
+2. You don't have to worry about naming elements that use expressions. Unlike Papyrus, in 
+Visual Paradigm element Ids are used as keys to store information, not names.  
+3. At present, you will have to export your diagram in XMI format in order to be used by
+the library. 
+
+> (Regarding 3) You have to purchase Modeler edition of Visual Paradigm to be able to
+export diagrams as XMIs.
+
+Bearing that on mind, your client code might look like the following:
+
+	DecisionFlowDescriber describer = VisualParadigm.getInstance("path/to/xmi/file");
+	DecisionFlow<MyContext, MyPayloadClass> flow = DecisionFlow.getInstance(describer);
+

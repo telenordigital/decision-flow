@@ -37,7 +37,7 @@ public abstract class AbstractXMIDescriber implements DecisionFlowDescriber {
     @Override
     public void getElements(final Callback callback) {
         final Properties properties = getLabels(umlFilePath);
-        Map<String, Map<String, String>> attrMaps = new HashMap<>();
+        Map<String, Map<String, Object>> attrMaps = new HashMap<>();
         Map<String, List<String>> stereotypeMap = new HashMap<>();
         processStereotypes(attrMaps, stereotypeMap);
         final String query = "//subvertex | //transition";
@@ -105,7 +105,7 @@ public abstract class AbstractXMIDescriber implements DecisionFlowDescriber {
                 }
 
                 @Override
-                public Map<String, String> getAttributes() {
+                public Map<String, Object> getAttributes() {
                     return attrMaps.get(getId());
                 }
 
@@ -144,7 +144,7 @@ public abstract class AbstractXMIDescriber implements DecisionFlowDescriber {
     }
 
     protected abstract void processStereotypes(
-            final Map<String, Map<String, String>> attrMaps,
+            final Map<String, Map<String, Object>> attrMaps,
             final Map<String, List<String>> stereotypeMap);
     protected abstract Properties getLabels(final String umlFilePath);
     protected abstract Map<String, String> getNsMap();

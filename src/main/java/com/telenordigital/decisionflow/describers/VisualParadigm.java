@@ -37,7 +37,7 @@ public class VisualParadigm extends AbstractXMIDescriber {
 
     @Override
     protected void processStereotypes(
-            Map<String, Map<String, String>> attrMaps,
+            Map<String, Map<String, Object>> attrMaps,
             Map<String, List<String>> stereotypeMap) {
         processStereotypeNames(stereotypeMap);
         processStereotypeValues(attrMaps);
@@ -69,7 +69,7 @@ public class VisualParadigm extends AbstractXMIDescriber {
         }
     }
 
-    private void processStereotypeValues(final Map<String, Map<String, String>> attrMaps) {
+    private void processStereotypeValues(final Map<String, Map<String, Object>> attrMaps) {
         final String query =
                 "//xmi:Extension/properties/property[@name='taggedValues']/vpumlModel/vpumlChildModelRefs/modelRef";
         NodeList elements = null;
@@ -92,7 +92,7 @@ public class VisualParadigm extends AbstractXMIDescriber {
                         .getParentNode()
                         .getParentNode());
                 assert parentNodeId != null;
-                Map<String, String> attrMap = attrMaps.get(parentNodeId);
+                Map<String, Object> attrMap = attrMaps.get(parentNodeId);
                 if (attrMap == null) {
                     attrMap = new HashMap<>();
                     attrMaps.put(parentNodeId, attrMap);

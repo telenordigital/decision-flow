@@ -63,7 +63,7 @@ public class Papyrus extends AbstractXMIDescriber {
 
     @Override
     protected void processStereotypes(
-            Map<String, Map<String, String>> attrMaps,
+            Map<String, Map<String, Object>> attrMaps,
             Map<String, List<String>> stereotypeMap) {
         NodeList elements = null;
         try {
@@ -76,7 +76,7 @@ public class Papyrus extends AbstractXMIDescriber {
             final Node node = elements.item(i);
             final String baseState = eval("@base_State", node);
             if (baseState != null && !baseState.isEmpty()) {
-                final Map<String, String> attrs = new HashMap<>();
+                final Map<String, Object> attrs = new HashMap<>();
                 final NamedNodeMap nnm = node.getAttributes();
                 for (int j = 0; j < nnm.getLength(); j++) {
                     final Node nnmNode = nnm.item(j);

@@ -2,6 +2,7 @@ package com.telenordigital.decisionflow;
 
 import com.telenordigital.decisionflow.DecisionFlowDescriber.Callback;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementDescriptor;
+import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementType;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -60,35 +61,20 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                             throw new DecisionFlowException(
                                     "Multiple initial nodes found.");
                         }
-                        final InitialNode initNode = new InitialNode(
-                                elementDescriptor.getId(),
-                                elementDescriptor.getName(),
-                                elementDescriptor.getAttributes());
+                        final InitialNode initNode = new InitialNode(elementDescriptor);
                         initialNode = initNode;
                         nodeMap.put(initNode.getId(), initNode);
                         break;
                     case SWITCH:
-                        final Switch switchNode = new Switch(
-                                elementDescriptor.getId(),
-                                elementDescriptor.getName(),
-                                elementDescriptor.getAttributes(),
-                                elementDescriptor.getExpression());
+                        final Switch switchNode = new Switch(elementDescriptor);
                         nodeMap.put(switchNode.getId(), switchNode);
                         break;
                     case RANDOM_SWITCH:
-                        final RandomSwitch randomSwitchNode = new RandomSwitch(
-                                elementDescriptor.getId(),
-                                elementDescriptor.getName(),
-                                elementDescriptor.getAttributes(),
-                                elementDescriptor.getExpression());
+                        final RandomSwitch randomSwitchNode = new RandomSwitch(elementDescriptor);
                         nodeMap.put(randomSwitchNode.getId(), randomSwitchNode);
                         break;
                     case TARGET:
-                        final Target targetNode = new Target(
-                                elementDescriptor.getId(),
-                                elementDescriptor.getName(),
-                                elementDescriptor.getAttributes(),
-                                elementDescriptor.getExpression());
+                        final Target targetNode = new Target(elementDescriptor);
                         nodeMap.put(targetNode.getId(), targetNode);
                         break;
                     case ARROW:
@@ -124,14 +110,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                                 arrowDescriptor.getDestinationNodeId()));
             }
             final String xpr = arrowDescriptor.getExpression();
-            final Arrow arrow = new Arrow(
-                    arrowDescriptor.getId(),
-                    arrowDescriptor.isDefault()
-                        ? ArrowType.DEFAULT
-                        : (arrowDescriptor.isObligatory() ? ArrowType.OBLIGATORY : ArrowType.ORDINARY),
-                    arrowDescriptor.getName(),
-                    arrowDescriptor.getAttributes(),
-                    (xpr == null || xpr.isEmpty()) ? null : xpr, dstNode);
+            final Arrow arrow = new Arrow(arrowDescriptor, dstNode);
             srcNode.arrows.add(arrow);
         }
         for (AbstractNode node : nodeMap.values()) {
@@ -147,7 +126,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     private List<Decision<P>> getDecisions(
             final C context,
             final boolean stopAtFirstFound) {
-        final List<DecisionPathElement> path = new ArrayList<>();
+        final List<ElementDescriptor> path = new ArrayList<>();
         final List<Decision<P>> decisions = new ArrayList<>();
         getDecisions(context, initialNode, decisions, path, stopAtFirstFound);
         return decisions;
@@ -157,7 +136,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             final C context,
             final AbstractNode currentNode,
             final List<Decision<P>> accDecisions,
-            final List<DecisionPathElement> accPath,
+            final List<ElementDescriptor> accPath,
             final boolean stopAtFirstFound) {
 
         if (!skipLoopDetection && accPath.contains(currentNode)) {
@@ -167,7 +146,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
         accPath.add(currentNode);
         if (currentNode instanceof Target) {
-            final List<DecisionPathElement> snapshotPath = new ArrayList<>(accPath);
+            final List<ElementDescriptor> snapshotPath = new ArrayList<>(accPath);
             accDecisions.add(new Decision<P>() {
 
                 @Override
@@ -181,7 +160,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 }
 
                 @Override
-                public List<DecisionPathElement> getDecisionPath() {
+                public List<ElementDescriptor> getDecisionPath() {
                     return snapshotPath;
                 }
 
@@ -194,6 +173,38 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 @Override
                 public String getId() {
                     return currentNode.getId();
+                }
+
+                @Override
+                public ElementType getType() {
+                    return currentNode.getType();
+                }
+
+                @Override
+                public String getExpression() {
+                    return currentNode.getExpression();
+                }
+
+                @Override
+                public String getSourceNodeId() {
+                    return currentNode.getSourceNodeId();
+                }
+
+                @Override
+                public String getDestinationNodeId() {
+                    return currentNode.getDestinationNodeId();
+                }
+
+                @Override
+                public boolean isDefault() {
+                    // TODO Auto-generated method stub
+                    return false;
+                }
+
+                @Override
+                public boolean isObligatory() {
+                    // TODO Auto-generated method stub
+                    return false;
                 }
             });
             if (stopAtFirstFound) {
@@ -258,11 +269,11 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private Map<String, Object> evalAttributes(
             final C context,
-            final Map<String, String> originalAttributes) {
+            final Map<String, Object> originalAttributes) {
 
         final Map<String, Object> attributes = new HashMap<>();
         for (final String key: originalAttributes.keySet()) {
-            final String value = originalAttributes.get(key);
+            final String value = (String) originalAttributes.get(key);
             if (value == null) {
                 continue;
             }
@@ -289,34 +300,56 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         List<Arrow> getArrows();
     }
 
-    private abstract static class AbstractElement implements DecisionPathElement {
-        private final String id;
-        private final String name;
-        private final Map<String, String> attributes = new HashMap<>();
+    private abstract static class AbstractElement implements ElementDescriptor {
+        private final ElementDescriptor elementDescriptor;
 
-        AbstractElement(
-                final String id,
-                final String name,
-                final Map<String, String> attributes) {
-            this.id = id;
-            this.name = name;
-            if (attributes != null) {
-                this.attributes.putAll(attributes);
-            }
+        AbstractElement(final ElementDescriptor elementDescriptor) {
+            this.elementDescriptor = elementDescriptor;
         }
 
         @Override
         public String getId() {
-            return id;
+            return elementDescriptor.getId();
         }
 
         @Override
         public String getName() {
-            return name;
+            return elementDescriptor.getName();
         }
 
-        public Map<String, String> getAttributes() {
-            return attributes;
+        @Override
+        public Map<String, Object> getAttributes() {
+            return elementDescriptor.getAttributes();
+        }
+
+        @Override
+        public ElementType getType() {
+            return elementDescriptor.getType();
+        }
+
+        @Override
+        public String getExpression() {
+            return elementDescriptor.getExpression();
+        }
+
+        @Override
+        public String getSourceNodeId() {
+            return elementDescriptor.getSourceNodeId();
+        }
+
+        @Override
+        public String getDestinationNodeId() {
+            return elementDescriptor.getDestinationNodeId();
+        }
+
+        @Override
+        public boolean isDefault() {
+            return elementDescriptor.isDefault();
+        }
+
+        @Override
+        public boolean isObligatory() {
+            return elementDescriptor.isObligatory();
         }
 
         @Override
@@ -343,11 +376,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private abstract static class AbstractNode extends AbstractElement implements Node {
         private List<Arrow> arrows = new ArrayList<>();
-        AbstractNode(
-                final String id,
-                final String name,
-                final Map<String, String> attributes) {
-            super(id, name, attributes);
+        AbstractNode(final ElementDescriptor elementDescriptor) {
+            super(elementDescriptor);
         }
 
         @Override
@@ -357,11 +387,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     }
 
     private static class InitialNode extends AbstractNode {
-        InitialNode(
-                final String id,
-                final String name,
-                final Map<String, String> attributes) {
-            super(id, name, attributes);
+        InitialNode(final ElementDescriptor elementDescriptor) {
+            super(elementDescriptor);
         }
     }
 
@@ -387,12 +414,9 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private static class Switch extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
-        Switch(final String id,
-               final String name,
-               final Map<String, String> attributes,
-               final String expression) {
-            super(id, name, attributes);
-            this.expressionHolder = new ExpressionHolder(expression);
+        Switch(final ElementDescriptor elementDescriptor) {
+            super(elementDescriptor);
+            this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }
 
         @Override
@@ -402,11 +426,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     }
 
     private static class RandomSwitch extends Switch {
-        RandomSwitch(final String id,
-                     final String name,
-                     final Map<String, String> attributes,
-                     final String expression) {
-            super(id, name, attributes, expression);
+        RandomSwitch(final ElementDescriptor elementDescriptor) {
+            super(elementDescriptor);
         }
     }
 
@@ -415,16 +436,14 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         private final ExpressionHolder expressionHolder;
         private final AbstractNode destination;
         private final ArrowType arrowType;
-        Arrow(final String id,
-              final ArrowType arrowType,
-              final String name,
-              final Map<String, String> attributes,
-              final String expression,
-              final AbstractNode destination) {
-            super(id, name, attributes);
-            this.arrowType = arrowType;
+        Arrow(final ElementDescriptor elementDescriptor, final AbstractNode destination) {
+            super(elementDescriptor);
+            this.arrowType =
+                    elementDescriptor.isObligatory()
+                        ? ArrowType.OBLIGATORY
+                        : (elementDescriptor.isDefault() ? ArrowType.DEFAULT : ArrowType.ORDINARY);
             this.destination = destination;
-            this.expressionHolder = new ExpressionHolder(expression);
+            this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }
 
         AbstractNode getDestination() {
@@ -442,12 +461,9 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private static class Target extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
-        Target(final String id,
-               final String name,
-               final Map<String, String> attributes,
-               final String expression) {
-            super(id, name, attributes);
-            this.expressionHolder = new ExpressionHolder(expression);
+        Target(final ElementDescriptor elementDescriptor) {
+            super(elementDescriptor);
+            this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }
 
         @Override
