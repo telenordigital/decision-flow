@@ -318,4 +318,48 @@ public class ZooTest {
                     containsAll(Arrays.asList(Animal.SEAGULL, Animal.COCKATOO)),
                 equalTo(true));
     }
+
+    @Test
+    public void testContinueFrom() {
+        AnimalDescription elephantTigerAndBat =
+                new AnimalDescription(
+                        Environment.LAND, AnimalClass.MAMMAL, AnimalOrder.OTHER,
+                        50000,
+                        false, false, false, false, false, false);
+
+        Decision<Animal> elephant = theFlow.getDecision(elephantTigerAndBat);
+        assertThat(elephant.getPayload(), equalTo(Animal.ELEPHANT));
+
+        Decision<Animal> tiger = theFlow.continueFrom(elephant, elephantTigerAndBat);
+        assertThat(tiger.getPayload(), equalTo(Animal.TIGER));
+
+
+        Decision<Animal> bat = theFlow.continueFrom(tiger, elephantTigerAndBat);
+        assertThat(bat.getPayload(), equalTo(Animal.BAT));
+
+        Decision<Animal> nullDecision = theFlow.continueFrom(bat, elephantTigerAndBat);
+        assertThat(nullDecision, equalTo(null));
+    }
+
+    @Test
+    public void testContinueFrom2() {
+        AnimalDescription elephantTigerAndBat =
+                new AnimalDescription(
+                        Environment.LAND, AnimalClass.MAMMAL, AnimalOrder.OTHER,
+                        50000,
+                        false, false, false, false, false, false);
+
+        Decision<Animal> elephant = theFlow.getDecision(elephantTigerAndBat);
+        assertThat(elephant.getPayload(), equalTo(Animal.ELEPHANT));
+
+        Decision<Animal> tiger = theFlow.continueFrom(elephant.getId(), elephantTigerAndBat);
+        assertThat(tiger.getPayload(), equalTo(Animal.TIGER));
+
+
+        Decision<Animal> bat = theFlow.continueFrom(tiger.getId(), elephantTigerAndBat);
+        assertThat(bat.getPayload(), equalTo(Animal.BAT));
+
+        Decision<Animal> nullDecision = theFlow.continueFrom(bat.getId(), elephantTigerAndBat);
+        assertThat(nullDecision, equalTo(null));
+    }
 }

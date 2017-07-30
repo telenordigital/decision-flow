@@ -6,4 +6,5 @@ import java.util.List;
 public interface Decision<T> extends ElementDescriptor {
     T getPayload();
     List<ElementDescriptor> getDecisionPath();
+    List<Decision<T>> getDecisions();
 }

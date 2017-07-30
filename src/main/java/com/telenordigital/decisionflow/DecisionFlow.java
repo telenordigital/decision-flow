@@ -50,6 +50,111 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         return getDecisions(context, false);
     }
 
+    public Decision<P> continueFrom(final Decision<P> decision, final C context) {
+        return continueFrom(context, decision);
+    }
+
+    public Decision<P> continueFrom(final String decisionId, final C context) {
+        final AbstractNode node = nodeMap.get(decisionId);
+        if (node == null) {
+            throw new DecisionFlowException("Node not found.");
+        }
+        if (!(node instanceof Target)) {
+            throw new DecisionFlowException("Not a decision.");
+        }
+        final List<Decision<P>> decisions = new ArrayList<>();
+        final List<ElementDescriptor> descriptors = new ArrayList<>();
+
+        final Decision<P> fakeDecision = new Decision<P>() {
+
+            @Override
+            public String getId() {
+                return node.getId();
+            }
+
+            @Override
+            public String getName() {
+                return node.getName();
+            }
+
+            @Override
+            public ElementType getType() {
+                return node.getType();
+            }
+
+            @Override
+            public Map<String, Object> getAttributes() {
+                return node.getAttributes();
+            }
+
+            @Override
+            public String getExpression() {
+                return node.getExpression();
+            }
+
+            @Override
+            public String getSourceNodeId() {
+                return node.getSourceNodeId();
+            }
+
+            @Override
+            public String getDestinationNodeId() {
+                return node.getDestinationNodeId();
+            }
+
+            @Override
+            public boolean isDefault() {
+                return node.isDefault();
+            }
+
+            @Override
+            public boolean isObligatory() {
+                return node.isObligatory();
+            }
+
+            @Override
+            public P getPayload() {
+                return null;
+            }
+
+            @Override
+            public List<ElementDescriptor> getDecisionPath() {
+                return descriptors;
+            }
+
+            @Override
+            public List<Decision<P>> getDecisions() {
+                return decisions;
+            }
+        };
+        return continueFrom(context, fakeDecision);
+    }
+
+    private Decision<P> continueFrom(
+            final C context,
+            final Decision<P> decision) {
+
+        final AbstractNode node = nodeMap.get(decision.getId());
+        if (node == null) {
+            throw new DecisionFlowException("Node not found.");
+        }
+        if (node.getArrows().size() == 0) {
+            return null;
+        }
+
+        if (node.getArrows().size() > 1) {
+            throw new DecisionFlowException("Multiple paths found to continue from.");
+        }
+
+        final int oldSize = decision.getDecisions().size();
+        getDecisions(context, node.getArrows().get(0).getDestination(),
+                decision.getDecisions(), decision.getDecisionPath(), true);
+        final int newSize = decision.getDecisions().size();
+        return (oldSize < newSize)
+                ? decision.getDecisions().get(newSize - 1)
+                : null;
+    }
+
     private void load(final DecisionFlowDescriber describer) {
         final Collection<ElementDescriptor> arrows = new ArrayList<>();
         describer.getElements(new Callback() {
@@ -109,7 +214,6 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                                 arrowDescriptor.getName(),
                                 arrowDescriptor.getDestinationNodeId()));
             }
-            final String xpr = arrowDescriptor.getExpression();
             final Arrow arrow = new Arrow(arrowDescriptor, dstNode);
             srcNode.arrows.add(arrow);
         }
@@ -147,7 +251,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         accPath.add(currentNode);
         if (currentNode instanceof Target) {
             final List<ElementDescriptor> snapshotPath = new ArrayList<>(accPath);
-            accDecisions.add(new Decision<P>() {
+            final List<Decision<P>> snapshotDecisions = new ArrayList<>(accDecisions);
+            final Decision<P> decision = new Decision<P>() {
 
                 @Override
                 public String getName() {
@@ -197,16 +302,24 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
                 @Override
                 public boolean isDefault() {
-                    // TODO Auto-generated method stub
-                    return false;
+                    return currentNode.isDefault();
                 }
 
                 @Override
                 public boolean isObligatory() {
-                    // TODO Auto-generated method stub
-                    return false;
+                    return currentNode.isObligatory();
                 }
-            });
+
+                @Override
+                public List<Decision<P>> getDecisions() {
+                    if (!snapshotDecisions.contains(this)) {
+                        snapshotDecisions.add(this);
+                    }
+                    return snapshotDecisions;
+                }
+            };
+
+            accDecisions.add(decision);
             if (stopAtFirstFound) {
                 return;
             }
@@ -296,10 +409,6 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         ExpressionHolder getExpressionHolder();
     }
 
-    private interface Node {
-        List<Arrow> getArrows();
-    }
-
     private abstract static class AbstractElement implements ElementDescriptor {
         private final ElementDescriptor elementDescriptor;
 
@@ -374,13 +483,12 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
     }
 
-    private abstract static class AbstractNode extends AbstractElement implements Node {
+    private abstract static class AbstractNode extends AbstractElement {
         private List<Arrow> arrows = new ArrayList<>();
         AbstractNode(final ElementDescriptor elementDescriptor) {
             super(elementDescriptor);
         }
 
-        @Override
         public List<Arrow> getArrows() {
             return arrows;
         }

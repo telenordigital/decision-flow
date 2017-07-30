@@ -11,7 +11,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
-            <version>4.3.10.RELEASE</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -124,6 +124,7 @@
         </plugins>
     </build>
     <properties>
+        <spring.version>4.3.10.RELEASE</spring.version>
         <jackson.version>2.7.4</jackson.version>
         <junit.version>4.12</junit.version>
     </properties>
