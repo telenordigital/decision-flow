@@ -568,21 +568,18 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             Arrow defaultArrow = null;
             if (defaultArrows.size() > 0) {
                 defaultArrow = defaultArrows.get(0);
-                defaultArrow
-                    .getExpressionHolder()
-                    .prepareExpression(String.valueOf(100 - sumNonNulls));
-                sum = 100;
+                sum = (sumNonNulls > 100) ? sumNonNulls : 100;
             }
 
-            final int[] flags = new int[sum];
+            final Integer[] flags = new Integer[sum];
             int arrowIndex = 0;
             int flagIndex = 0;
             for (final Arrow arrow : getArrows()) {
                 final int weight =
                         arrow.equals(defaultArrow)
-                        ? 100 - sum
+                        ? 100 - sumNonNulls
                         : Integer.valueOf(arrow.getExpressionHolder().getExpression());
-                arrow.getExpressionHolder().setExpression(String.valueOf(arrowIndex));
+                arrow.getExpressionHolder().prepareExpression(String.valueOf(arrowIndex));
                 for (int k = 0; k < weight; k++) {
                     flags[flagIndex++] = arrowIndex;
                 }
@@ -591,7 +588,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             randomisingExpressionHolder = new ExpressionHolder() {
                 @Override
                 protected Object eval(Object context) {
-                    return Integer.valueOf(flags[random.nextInt(flags.length)]);
+                    return flags[random.nextInt(flags.length)];
                 }
             };
         }

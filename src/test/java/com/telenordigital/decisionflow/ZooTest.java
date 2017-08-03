@@ -27,29 +27,30 @@ public class ZooTest {
     @Parameters
     public static List<DecisionFlow<AnimalDescription, Animal>> flowsToTest() {
         return Arrays.asList(
-                ZOO_PAPIRUS_FLOW,
-                ZOO_PAPIRUS_JSON_FLOW,
+                ZOO_PAPYRUS_FLOW,
+                ZOO_PAPYRUS_JSON_FLOW,
                 ZOO_VISUAL_PARADIGM_FLOW,
-                ZOO_VISUAL_PARADIGM_JSON_FLOW);
+                ZOO_VISUAL_PARADIGM_JSON_FLOW
+                );
     }
 
-    private static final DecisionFlowDescriber ZOO_PAPIRUS_DESCRIBER = Papyrus.getInstance(
+    private static final DecisionFlowDescriber ZOO_PAPYRUS_DESCRIBER = Papyrus.getInstance(
             "src/test/resources/papyrus/workspace/zoo/zoo.uml");
 
-    private static final DecisionFlowDescriber ZOO_PAPIRUS_JSON_DESCRIBER = JsonDescriber.getInstance(
-            ZOO_PAPIRUS_DESCRIBER);
+    private static final DecisionFlowDescriber ZOO_PAPYRUS_JSON_DESCRIBER = JsonDescriber.getInstance(
+            ZOO_PAPYRUS_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPYRUS_FLOW =
+            DecisionFlow.getInstance(ZOO_PAPYRUS_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPYRUS_JSON_FLOW =
+            DecisionFlow.getInstance(ZOO_PAPYRUS_JSON_DESCRIBER);
 
     private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_DESCRIBER = VisualParadigm.getInstance(
             "src/test/resources/visualparadigm/zoo.xmi");
 
     private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_JSON_DESCRIBER = JsonDescriber
             .getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
-
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPIRUS_FLOW =
-            DecisionFlow.getInstance(ZOO_PAPIRUS_DESCRIBER);
-
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPIRUS_JSON_FLOW =
-            DecisionFlow.getInstance(ZOO_PAPIRUS_JSON_DESCRIBER);
 
     private static DecisionFlow<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_FLOW =
             DecisionFlow.getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
@@ -351,15 +352,15 @@ public class ZooTest {
         for (int i = 0; i < 1000; i++) {
             Decision<Animal> decision = theFlow.getDecision(reptile);
             Animal animal = decision.getPayload();
-            System.out.println(String.format("%3d %s", i, decision.getDecisionPath()));
+            // System.out.println(String.format("%3d %s", i, decision.getDecisionPath()));
             Integer soFar = captured.get(animal);
             if (soFar == null) {
                 soFar = 0;
             }
             captured.put(animal, soFar + 1);
         }
-        assertThat(captured.size() == 3, equalTo(true));
         System.out.println(captured);
+        assertThat(captured.size() == 3, equalTo(true));
     }
 
     @Test
