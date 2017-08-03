@@ -61,9 +61,32 @@ public class ZooTest {
     enum Environment {WATER, LAND}
     enum AnimalClass {MAMMAL, BIRD, REPTILE, OTHER}
     enum AnimalOrder {PRIMATE, RODENT, OTHER}
-    enum Animal {GORILLA, COBRA, HUMAN, OSTRICH, TARANTULA, SEAGULL,
+    enum AnimalStrain {GORILLA, COBRA, HUMAN, OSTRICH, TARANTULA, SEAGULL,
         BLUE_WHALE, WHALE_SHARK, RAT, EAGLE, LEMUR, ELEPHANT, BAT, TIGER, PENGUIN, COCKATOO,
         CROCODILE, TURTLE, KOMODO_DRAGON}
+
+    static class Animal implements Decision.OnAttributesCallback{
+        AnimalStrain animalStrain;
+
+        Map<String, ?> attributes;
+
+        Animal(final AnimalStrain animalStrain) {
+            this.animalStrain = animalStrain;
+        }
+
+        @Override
+        public void onAttributes(final Map<String, ?> attributes) {
+            this.attributes = attributes;
+        }
+
+        AnimalStrain getAnimalStrain() {
+            return animalStrain;
+        }
+
+        Map<String, ?> getAttributes() {
+            return attributes;
+        }
+    }
 
     static class AnimalDescription {
         private Environment environment;
@@ -122,7 +145,7 @@ public class ZooTest {
             return Environment.valueOf(value);
         }
         public static Animal getAnimal(String value) {
-            return Animal.valueOf(value);
+            return new Animal(AnimalStrain.valueOf(value));
         }
     }
 
@@ -171,12 +194,13 @@ public class ZooTest {
                         50000,
                         false, false, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(blueWhaleAndWhaleShark);
-        assertThat(decision.getPayload(), equalTo(Animal.BLUE_WHALE));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.BLUE_WHALE));
+        assertThat(decision.getPayload().getAttributes(), equalTo(decision.getAttributes()));
         List<Decision<Animal>> decisions = theFlow.getDecisions(blueWhaleAndWhaleShark);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.BLUE_WHALE, Animal.WHALE_SHARK)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.BLUE_WHALE, AnimalStrain.WHALE_SHARK)),
                 equalTo(true));
     }
 
@@ -188,15 +212,16 @@ public class ZooTest {
                         0,
                         false, false, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(cobraAndTarantula);
-        assertThat(decision.getPayload(), equalTo(Animal.COBRA));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.COBRA));
         assertThat(decision.getAttributes().get("legCount"), equalTo(null));
         assertThat(decision.getAttributes().get("description"),
                 equalTo("One of the most feared snakes"));
+        assertThat(decision.getPayload().getAttributes(), equalTo(decision.getAttributes()));
         List<Decision<Animal>> decisions = theFlow.getDecisions(cobraAndTarantula);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.COBRA, Animal.TARANTULA)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.COBRA, AnimalStrain.TARANTULA)),
                 equalTo(true));
     }
 
@@ -208,15 +233,15 @@ public class ZooTest {
                         200,
                         true, false, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(gorillaAndLemur);
-        assertThat(decision.getPayload(), equalTo(Animal.GORILLA));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.GORILLA));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         assertThat(decision.getAttributes().get("description"),
                 equalTo(null));
         List<Decision<Animal>> decisions = theFlow.getDecisions(gorillaAndLemur);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.GORILLA, Animal.LEMUR)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.GORILLA, AnimalStrain.LEMUR)),
                 equalTo(true));
     }
 
@@ -228,15 +253,16 @@ public class ZooTest {
                         200,
                         false, false, false, false, true, false);
         Decision<Animal> decision = theFlow.getDecision(human);
-        assertThat(decision.getPayload(), equalTo(Animal.HUMAN));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.HUMAN));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         assertThat(decision.getAttributes().get("description"),
                 equalTo("The naked ape"));
+        assertThat(decision.getPayload().getAttributes(), equalTo(decision.getAttributes()));
         List<Decision<Animal>> decisions = theFlow.getDecisions(human);
         assertThat(decisions.size(), equalTo(1));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.HUMAN)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.HUMAN)),
                 equalTo(true));
     }
 
@@ -248,15 +274,16 @@ public class ZooTest {
                         50000,
                         false, false, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(rat);
-        assertThat(decision.getPayload(), equalTo(Animal.RAT));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.RAT));
         assertThat(decision.getAttributes().get("legCount"), equalTo(4));
         assertThat(decision.getAttributes().get("description"),
                 equalTo("They say the most adaptable mammal on Earth"));
+        assertThat(decision.getPayload().getAttributes(), equalTo(decision.getAttributes()));
         List<Decision<Animal>> decisions = theFlow.getDecisions(rat);
         assertThat(decisions.size(), equalTo(1));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.RAT)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.RAT)),
                 equalTo(true));
     }
 
@@ -268,7 +295,7 @@ public class ZooTest {
                         50000,
                         false, false, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(elephantTigerAndBat);
-        assertThat(decision.getPayload(), equalTo(Animal.ELEPHANT));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.ELEPHANT));
         assertThat(decision.getAttributes().get("legCount"), equalTo(4));
         assertThat(decision.getAttributes().get("trunkCount"), equalTo(1));
         assertThat(decision.getAttributes().get("description"),
@@ -276,8 +303,8 @@ public class ZooTest {
         List<Decision<Animal>> decisions = theFlow.getDecisions(elephantTigerAndBat);
         assertThat(decisions.size(), equalTo(3));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.ELEPHANT, Animal.TIGER, Animal.BAT)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.ELEPHANT, AnimalStrain.TIGER, AnimalStrain.BAT)),
                 equalTo(true));
     }
 
@@ -289,15 +316,16 @@ public class ZooTest {
                         50000,
                         false, true, false, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(ostrich);
-        assertThat(decision.getPayload(), equalTo(Animal.OSTRICH));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.OSTRICH));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         assertThat(decision.getAttributes().get("description"),
                 equalTo("One of the fastest runners on Earth"));
+        assertThat(decision.getPayload().getAttributes(), equalTo(decision.getAttributes()));
         List<Decision<Animal>> decisions = theFlow.getDecisions(ostrich);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.OSTRICH, Animal.PENGUIN)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.OSTRICH, AnimalStrain.PENGUIN)),
                 equalTo(true));
     }
 
@@ -310,14 +338,14 @@ public class ZooTest {
                         false, false, true, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(eagle);
         assertThat(
-                Animal.EAGLE.equals(decision.getPayload())
-                || Animal.COCKATOO.equals(decision.getPayload()), equalTo(true));
+                AnimalStrain.EAGLE.equals(decision.getPayload().getAnimalStrain())
+                || AnimalStrain.COCKATOO.equals(decision.getPayload().getAnimalStrain()), equalTo(true));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         List<Decision<Animal>> decisions = theFlow.getDecisions(eagle);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.EAGLE)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.EAGLE)),
                 equalTo(true));
     }
 
@@ -329,15 +357,15 @@ public class ZooTest {
                         50000,
                         false, true, true, false, false, false);
         Decision<Animal> decision = theFlow.getDecision(seagull);
-        assertThat(decision.getPayload(), equalTo(Animal.COCKATOO));
+        assertThat(decision.getPayload().getAnimalStrain(), equalTo(AnimalStrain.COCKATOO));
         assertThat(decision.getAttributes().get("legCount"), equalTo(2));
         assertThat(decision.getAttributes().get("description"),
                 equalTo("Demonstrating <<always>> stereotype"));
         List<Decision<Animal>> decisions = theFlow.getDecisions(seagull);
         assertThat(decisions.size(), equalTo(2));
         assertThat(
-                decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
-                    containsAll(Arrays.asList(Animal.SEAGULL, Animal.COCKATOO)),
+                decisions.stream().map(d -> d.getPayload().getAnimalStrain()).collect(Collectors.toList()).
+                    containsAll(Arrays.asList(AnimalStrain.SEAGULL, AnimalStrain.COCKATOO)),
                 equalTo(true));
     }
 
@@ -348,16 +376,16 @@ public class ZooTest {
                         Environment.LAND, AnimalClass.REPTILE, AnimalOrder.OTHER,
                         50,
                         false, true, true, false, false, false);
-        Map<Animal, Integer> captured = new HashMap<>();
+        Map<AnimalStrain, Integer> captured = new HashMap<>();
         for (int i = 0; i < 1000; i++) {
             Decision<Animal> decision = theFlow.getDecision(reptile);
             Animal animal = decision.getPayload();
             // System.out.println(String.format("%3d %s", i, decision.getDecisionPath()));
-            Integer soFar = captured.get(animal);
+            Integer soFar = captured.get(animal.getAnimalStrain());
             if (soFar == null) {
                 soFar = 0;
             }
-            captured.put(animal, soFar + 1);
+            captured.put(animal.getAnimalStrain(), soFar + 1);
         }
         System.out.println(captured);
         assertThat(captured.size() == 3, equalTo(true));
@@ -372,14 +400,14 @@ public class ZooTest {
                         false, false, false, false, false, false);
 
         Decision<Animal> elephant = theFlow.getDecision(elephantTigerAndBat);
-        assertThat(elephant.getPayload(), equalTo(Animal.ELEPHANT));
+        assertThat(elephant.getPayload().getAnimalStrain(), equalTo(AnimalStrain.ELEPHANT));
 
         Decision<Animal> tiger = theFlow.continueFrom(elephant, elephantTigerAndBat);
-        assertThat(tiger.getPayload(), equalTo(Animal.TIGER));
+        assertThat(tiger.getPayload().getAnimalStrain(), equalTo(AnimalStrain.TIGER));
 
 
         Decision<Animal> bat = theFlow.continueFrom(tiger, elephantTigerAndBat);
-        assertThat(bat.getPayload(), equalTo(Animal.BAT));
+        assertThat(bat.getPayload().getAnimalStrain(), equalTo(AnimalStrain.BAT));
 
         Decision<Animal> nullDecision = theFlow.continueFrom(bat, elephantTigerAndBat);
         assertThat(nullDecision, equalTo(null));
@@ -394,14 +422,14 @@ public class ZooTest {
                         false, false, false, false, false, false);
 
         Decision<Animal> elephant = theFlow.getDecision(elephantTigerAndBat);
-        assertThat(elephant.getPayload(), equalTo(Animal.ELEPHANT));
+        assertThat(elephant.getPayload().getAnimalStrain(), equalTo(AnimalStrain.ELEPHANT));
 
         Decision<Animal> tiger = theFlow.continueFrom(elephant.getId(), elephantTigerAndBat);
-        assertThat(tiger.getPayload(), equalTo(Animal.TIGER));
+        assertThat(tiger.getPayload().getAnimalStrain(), equalTo(AnimalStrain.TIGER));
 
 
         Decision<Animal> bat = theFlow.continueFrom(tiger.getId(), elephantTigerAndBat);
-        assertThat(bat.getPayload(), equalTo(Animal.BAT));
+        assertThat(bat.getPayload().getAnimalStrain(), equalTo(AnimalStrain.BAT));
 
         Decision<Animal> nullDecision = theFlow.continueFrom(bat.getId(), elephantTigerAndBat);
         assertThat(nullDecision, equalTo(null));

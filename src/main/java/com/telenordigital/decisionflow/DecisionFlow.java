@@ -1,5 +1,6 @@
 package com.telenordigital.decisionflow;
 
+import com.telenordigital.decisionflow.Decision.OnAttributesCallback;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.Callback;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementDescriptor;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementType;
@@ -249,6 +250,9 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             @SuppressWarnings({ "unchecked"})
             final P payload = (P) ((Target) currentNode).getExpressionHolder().eval(context);
             Map<String, ?> attributes = evalAttributes(context, currentNode.getAttributes());
+            if (payload instanceof OnAttributesCallback) {
+                ((OnAttributesCallback) payload).onAttributes(attributes);
+            }
             final Decision<P> decision = new Decision<P>() {
 
                 @Override
