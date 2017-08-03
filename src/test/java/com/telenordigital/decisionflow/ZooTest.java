@@ -2,8 +2,11 @@ package com.telenordigital.decisionflow;
 
 import com.telenordigital.decisionflow.describers.JsonDescriber;
 import com.telenordigital.decisionflow.describers.Papyrus;
+import com.telenordigital.decisionflow.describers.VisualParadigm;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,20 +20,49 @@ public class ZooTest {
 
     private final DecisionFlow<AnimalDescription, Animal> theFlow;
 
-    public ZooTest(DecisionFlowDescriber describer) {
-        this.theFlow = DecisionFlow.getInstance(describer);
+    public ZooTest(DecisionFlow<AnimalDescription, Animal> flow) {
+        this.theFlow = flow;
     }
 
     @Parameters
-    public static List<DecisionFlowDescriber> describersToTest() {
-        return Arrays.asList(getPapyrusDescriber(), getJsonDescriber());
+    public static List<DecisionFlow<AnimalDescription, Animal>> flowsToTest() {
+        return Arrays.asList(
+                ZOO_PAPIRUS_FLOW,
+                ZOO_PAPIRUS_JSON_FLOW,
+                ZOO_VISUAL_PARADIGM_FLOW,
+                ZOO_VISUAL_PARADIGM_JSON_FLOW);
     }
 
+    private static final DecisionFlowDescriber ZOO_PAPIRUS_DESCRIBER = Papyrus.getInstance(
+            "src/test/resources/papyrus/workspace/zoo/zoo.uml");
+
+    private static final DecisionFlowDescriber ZOO_PAPIRUS_JSON_DESCRIBER = JsonDescriber.getInstance(
+            ZOO_PAPIRUS_DESCRIBER);
+
+    private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_DESCRIBER = VisualParadigm.getInstance(
+            "src/test/resources/visualparadigm/zoo.xmi");
+
+    private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_JSON_DESCRIBER = JsonDescriber
+            .getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPIRUS_FLOW =
+            DecisionFlow.getInstance(ZOO_PAPIRUS_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPIRUS_JSON_FLOW =
+            DecisionFlow.getInstance(ZOO_PAPIRUS_JSON_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_FLOW =
+            DecisionFlow.getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
+
+    private static DecisionFlow<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_JSON_FLOW =
+            DecisionFlow.getInstance(ZOO_VISUAL_PARADIGM_JSON_DESCRIBER);
+
     enum Environment {WATER, LAND}
-    enum AnimalClass {MAMMAL, BIRD, OTHER}
+    enum AnimalClass {MAMMAL, BIRD, REPTILE, OTHER}
     enum AnimalOrder {PRIMATE, RODENT, OTHER}
     enum Animal {GORILLA, COBRA, HUMAN, OSTRICH, TARANTULA, SEAGULL,
-        BLUE_WHALE, WHALE_SHARK, RAT, EAGLE, LEMUR, ELEPHANT, BAT, TIGER, PENGUIN, COCKATOO}
+        BLUE_WHALE, WHALE_SHARK, RAT, EAGLE, LEMUR, ELEPHANT, BAT, TIGER, PENGUIN, COCKATOO,
+        CROCODILE, TURTLE, KOMODO_DRAGON}
 
     static class AnimalDescription {
         private Environment environment;
@@ -113,17 +145,6 @@ public class ZooTest {
             this.canRead = canRead;
             this.canCount = canCount;
         }
-    }
-
-    static final DecisionFlowDescriber ZOO_PAPIRUS_DESCRIBER = Papyrus.getInstance(
-            "src/test/resources/papyrus/workspace/zoo/zoo.uml");
-
-    public static DecisionFlowDescriber getJsonDescriber() {
-        return JsonDescriber.getInstance(ZOO_PAPIRUS_DESCRIBER);
-    }
-
-    public static DecisionFlowDescriber getPapyrusDescriber() {
-        return ZOO_PAPIRUS_DESCRIBER;
     }
 
     @Test
@@ -317,6 +338,28 @@ public class ZooTest {
                 decisions.stream().map(d -> d.getPayload()).collect(Collectors.toList()).
                     containsAll(Arrays.asList(Animal.SEAGULL, Animal.COCKATOO)),
                 equalTo(true));
+    }
+
+    @Test
+    public void testRandom() {
+        AnimalDescription reptile =
+                new AnimalDescription(
+                        Environment.LAND, AnimalClass.REPTILE, AnimalOrder.OTHER,
+                        50,
+                        false, true, true, false, false, false);
+        Map<Animal, Integer> captured = new HashMap<>();
+        for (int i = 0; i < 1000; i++) {
+            Decision<Animal> decision = theFlow.getDecision(reptile);
+            Animal animal = decision.getPayload();
+            System.out.println(String.format("%3d %s", i, decision.getDecisionPath()));
+            Integer soFar = captured.get(animal);
+            if (soFar == null) {
+                soFar = 0;
+            }
+            captured.put(animal, soFar + 1);
+        }
+        assertThat(captured.size() == 3, equalTo(true));
+        System.out.println(captured);
     }
 
     @Test

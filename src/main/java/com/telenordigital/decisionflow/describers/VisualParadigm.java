@@ -91,7 +91,7 @@ public class VisualParadigm extends AbstractXMIDescriber {
                         .getParentNode()
                         .getParentNode()
                         .getParentNode());
-                assert parentNodeId != null;
+                assert parentNodeId != null : "No parrent node found for " + node.toString();
                 Map<String, Object> attrMap = attrMaps.get(parentNodeId);
                 if (attrMap == null) {
                     attrMap = new HashMap<>();

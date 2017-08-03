@@ -10,6 +10,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
+import java.util.stream.Collectors;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -18,25 +20,13 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private InitialNode initialNode = null;
     private final Map<String, AbstractNode> nodeMap = new HashMap<>();
-    private boolean skipLoopDetection = false;
 
     private DecisionFlow(final DecisionFlowDescriber describer) {
         load(describer);
     }
 
-    private DecisionFlow(final DecisionFlowDescriber describer, boolean skipLoopDetection) {
-        this.skipLoopDetection = skipLoopDetection;
-        load(describer);
-    }
-
     public static <C, P> DecisionFlow<C, P> getInstance(final DecisionFlowDescriber describer) {
         return new DecisionFlow<>(describer);
-    }
-
-    public static <C, P> DecisionFlow<C, P> getInstance(
-            final DecisionFlowDescriber describer,
-            final boolean skipLoopDetection) {
-        return new DecisionFlow<>(describer, skipLoopDetection);
     }
 
     @Override
@@ -83,7 +73,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             }
 
             @Override
-            public Map<String, Object> getAttributes() {
+            public Map<String, ?> getAttributes() {
                 return node.getAttributes();
             }
 
@@ -218,12 +208,16 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             srcNode.arrows.add(arrow);
         }
         for (AbstractNode node : nodeMap.values()) {
-            Collections.sort(node.arrows, new Comparator<Arrow>() {
+            Collections.sort(node.getArrows(), new Comparator<Arrow>() {
                 @Override
                 public int compare(Arrow o1, Arrow o2) {
                     return o1.getArrowType().ordinal() - o2.getArrowType().ordinal();
                 }
             });
+            if (node instanceof RandomSwitch) {
+                ((RandomSwitch) node).ignite();
+            }
+
         }
     }
 
@@ -243,7 +237,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             final List<ElementDescriptor> accPath,
             final boolean stopAtFirstFound) {
 
-        if (!skipLoopDetection && accPath.contains(currentNode)) {
+        if (accPath.contains(currentNode)) {
             throw new DecisionFlowException(
                     String.format("Loops detected in the decision flow (%s)",
                             currentNode.getName()));
@@ -252,6 +246,9 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         if (currentNode instanceof Target) {
             final List<ElementDescriptor> snapshotPath = new ArrayList<>(accPath);
             final List<Decision<P>> snapshotDecisions = new ArrayList<>(accDecisions);
+            @SuppressWarnings({ "unchecked"})
+            final P payload = (P) ((Target) currentNode).getExpressionHolder().eval(context);
+            Map<String, ?> attributes = evalAttributes(context, currentNode.getAttributes());
             final Decision<P> decision = new Decision<P>() {
 
                 @Override
@@ -260,8 +257,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 }
 
                 @Override
-                public Map<String, Object> getAttributes() {
-                    return evalAttributes(context, currentNode.getAttributes());
+                public Map<String, ?> getAttributes() {
+                    return attributes;
                 }
 
                 @Override
@@ -270,9 +267,8 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 }
 
                 @Override
-                @SuppressWarnings("unchecked")
                 public P getPayload() {
-                    return (P) eval(context, ((Target) currentNode).getExpressionHolder());
+                    return payload;
                 }
 
                 @Override
@@ -327,7 +323,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         Arrow defaultArrow = null;
         Object switchExprResult = null;
         if (currentNode instanceof Switch) {
-            switchExprResult = eval(context, ((Switch) currentNode).getExpressionHolder());
+            switchExprResult = ((Switch) currentNode).getExpressionHolder().eval(context);
         }
         for (Arrow arrow : currentNode.getArrows()) {
             switch (arrow.arrowType) {
@@ -341,7 +337,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 defaultArrow = arrow;
                 break;
             case ORDINARY:
-                final Object arrowExprResult = eval(context, arrow.getExpressionHolder());
+                final Object arrowExprResult = arrow.getExpressionHolder().eval(context);
                 if (areEqual(switchExprResult, arrowExprResult)) {
                     accPath.add(arrow);
                     getDecisions(
@@ -380,13 +376,11 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         return nodeExprResult.equals(arrowExprResult);
     }
 
-    private Map<String, Object> evalAttributes(
-            final C context,
-            final Map<String, Object> originalAttributes) {
+    private Map<String, ?> evalAttributes(final C context, final Map<String, ?> map) {
 
         final Map<String, Object> attributes = new HashMap<>();
-        for (final String key: originalAttributes.keySet()) {
-            final String value = (String) originalAttributes.get(key);
+        for (final String key: map.keySet()) {
+            final String value = (String) map.get(key);
             if (value == null) {
                 continue;
             }
@@ -399,10 +393,6 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             }
         }
         return attributes;
-    }
-
-    private Object eval(C context, ExpressionHolder expressionHolder) {
-        return expressionHolder.getParsedExpression().getValue(context);
     }
 
     private interface ElementWithExpressionHolder {
@@ -427,7 +417,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         }
 
         @Override
-        public Map<String, Object> getAttributes() {
+        public Map<String, ?> getAttributes() {
             return elementDescriptor.getAttributes();
         }
 
@@ -485,11 +475,11 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private abstract static class AbstractNode extends AbstractElement {
         private List<Arrow> arrows = new ArrayList<>();
-        AbstractNode(final ElementDescriptor elementDescriptor) {
+        private AbstractNode(final ElementDescriptor elementDescriptor) {
             super(elementDescriptor);
         }
 
-        public List<Arrow> getArrows() {
+        List<Arrow> getArrows() {
             return arrows;
         }
     }
@@ -504,25 +494,37 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         private static final ExpressionParser EXPRESSION_PARSER =
                 new SpelExpressionParser();
 
-        private final String expression;
-        private final Expression parsedExpression;
-        ExpressionHolder(final String expression) {
+        private String expression;
+        private Expression parsedExpression;
+
+        private ExpressionHolder(final String expression) {
+            setExpression(expression);
+        }
+
+        private ExpressionHolder() {
+        }
+
+        private String getExpression() {
+            return expression;
+        }
+
+        <C> Object eval(C context) {
+            return parsedExpression.getValue(context);
+        }
+
+        private void setExpression(final String expression) {
             this.expression = expression;
             parsedExpression = EXPRESSION_PARSER.parseExpression(expression);
         }
 
-        public String getExpression() {
-            return expression;
-        }
-
-        public Expression getParsedExpression() {
-            return parsedExpression;
+        private void prepareExpression(final String expression) {
+            parsedExpression = EXPRESSION_PARSER.parseExpression(expression);
         }
     }
 
     private static class Switch extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
-        Switch(final ElementDescriptor elementDescriptor) {
+        private Switch(final ElementDescriptor elementDescriptor) {
             super(elementDescriptor);
             this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }
@@ -534,17 +536,73 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     }
 
     private static class RandomSwitch extends Switch {
-        RandomSwitch(final ElementDescriptor elementDescriptor) {
+        private ExpressionHolder randomisingExpressionHolder = null;
+
+        private RandomSwitch(final ElementDescriptor elementDescriptor) {
             super(elementDescriptor);
+        }
+
+        @Override
+        public ExpressionHolder getExpressionHolder() {
+            if (randomisingExpressionHolder == null) {
+                throw new DecisionFlowException("Random switch not initialised.");
+            }
+            return randomisingExpressionHolder;
+        }
+
+        private void ignite() {
+            final Random random = new Random();
+            final Integer sumNonNulls = getArrows()
+                    .stream()
+                    .filter(a -> a.getExpressionHolder().getExpression() != null)
+                    .map(a -> Integer.valueOf(a.getExpressionHolder().getExpression()))
+                    .reduce(0, (a, b) -> a + b);
+            Integer sum = sumNonNulls;
+            final List<Arrow> defaultArrows = getArrows()
+                    .stream()
+                    .filter(a -> a.isDefault())
+                    .collect(Collectors.toList());
+            if (defaultArrows.size() > 1) {
+                throw new DecisionFlowException("Multiple default arrows found from a random switch.");
+            }
+            Arrow defaultArrow = null;
+            if (defaultArrows.size() > 0) {
+                defaultArrow = defaultArrows.get(0);
+                defaultArrow
+                    .getExpressionHolder()
+                    .prepareExpression(String.valueOf(100 - sumNonNulls));
+                sum = 100;
+            }
+
+            final int[] flags = new int[sum];
+            int arrowIndex = 0;
+            int flagIndex = 0;
+            for (final Arrow arrow : getArrows()) {
+                final int weight =
+                        arrow.equals(defaultArrow)
+                        ? 100 - sum
+                        : Integer.valueOf(arrow.getExpressionHolder().getExpression());
+                arrow.getExpressionHolder().setExpression(String.valueOf(arrowIndex));
+                for (int k = 0; k < weight; k++) {
+                    flags[flagIndex++] = arrowIndex;
+                }
+                arrowIndex++;
+            }
+            randomisingExpressionHolder = new ExpressionHolder() {
+                @Override
+                protected Object eval(Object context) {
+                    return Integer.valueOf(flags[random.nextInt(flags.length)]);
+                }
+            };
         }
     }
 
     private enum ArrowType {DEFAULT, OBLIGATORY, ORDINARY};
-    private static class Arrow extends AbstractElement implements ElementWithExpressionHolder{
+    private static class Arrow extends AbstractElement implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
         private final AbstractNode destination;
         private final ArrowType arrowType;
-        Arrow(final ElementDescriptor elementDescriptor, final AbstractNode destination) {
+        private Arrow(final ElementDescriptor elementDescriptor, final AbstractNode destination) {
             super(elementDescriptor);
             this.arrowType =
                     elementDescriptor.isObligatory()
@@ -554,7 +612,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }
 
-        AbstractNode getDestination() {
+        private AbstractNode getDestination() {
             return destination;
         }
         @Override
@@ -562,14 +620,14 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
             return expressionHolder;
         }
 
-        public ArrowType getArrowType() {
+        private ArrowType getArrowType() {
             return arrowType;
         }
     }
 
     private static class Target extends AbstractNode implements ElementWithExpressionHolder {
         private final ExpressionHolder expressionHolder;
-        Target(final ElementDescriptor elementDescriptor) {
+        private Target(final ElementDescriptor elementDescriptor) {
             super(elementDescriptor);
             this.expressionHolder = new ExpressionHolder(elementDescriptor.getExpression());
         }

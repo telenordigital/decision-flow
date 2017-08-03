@@ -61,7 +61,13 @@ public abstract class AbstractXMIDescriber implements DecisionFlowDescriber {
                 } else if ("uml:Pseudostate".equals(nodeType)) {
                     String nodeKind = eval("@kind", node);
                     if ("choice".equals(nodeKind)) {
-                        elementType = ElementType.SWITCH;
+                        final List<String> stereotypes = stereotypeMap.get(eval("@xmi:id", node));
+                        if (stereotypes != null &&
+                                (stereotypes.contains("Random") || stereotypes.contains("random"))) {
+                            elementType = ElementType.RANDOM_SWITCH;
+                        } else {
+                            elementType = ElementType.SWITCH;
+                        }
                     } else if (nodeKind == null || "initial".equals(nodeKind)) {
                         elementType = ElementType.INITIAL;
                     }

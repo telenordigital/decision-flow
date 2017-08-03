@@ -21,7 +21,7 @@ public interface DecisionFlowDescriber {
         String getId();
         String getName();
         ElementType getType();
-        Map<String, Object> getAttributes();
+        Map<String, ?> getAttributes();
         String getExpression();
         String getSourceNodeId();
         String getDestinationNodeId();

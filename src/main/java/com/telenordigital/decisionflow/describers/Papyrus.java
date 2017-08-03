@@ -74,30 +74,33 @@ public class Papyrus extends AbstractXMIDescriber {
         }
         for (int i = 0; i < elements.getLength(); i++) {
             final Node node = elements.item(i);
-            final String baseState = eval("@base_State", node);
+            String baseState = eval("@base_State", node);
+            if (baseState == null || baseState.isEmpty()) {
+                baseState = eval("@base_Pseudostate", node);
+            }
+            if (baseState == null || baseState.isEmpty()) {
+                baseState = eval("@base_Transition", node);
+            }
             if (baseState != null && !baseState.isEmpty()) {
                 final Map<String, Object> attrs = new HashMap<>();
                 final NamedNodeMap nnm = node.getAttributes();
                 for (int j = 0; j < nnm.getLength(); j++) {
                     final Node nnmNode = nnm.item(j);
                     final String nnmNodeName = nnmNode.getNodeName();
-                    if (!nnmNodeName.contains(":") && !nnmNodeName.equals("base_State")) {
+                    if (!nnmNodeName.contains(":") && !nnmNodeName.equals(baseState)) {
                         attrs.put(nnmNodeName, nnmNode.getNodeValue());
                     }
                 }
                 if (!attrs.isEmpty()) {
                     attrMaps.put(baseState, attrs);
                 }
-            }
-            final String baseTransition = eval("@base_Transition", node);
-            if (baseTransition != null && !baseTransition.isEmpty()) {
                 final String nodeName = node.getNodeName();
                 final String[] profileAndStereotype = nodeName.split(":");
                 if (profileAndStereotype.length == 2) {
                     List<String> stereotypes = stereotypeMap.get(baseState);
                     if (stereotypes == null) {
                         stereotypes = new ArrayList<>();
-                        stereotypeMap.put(baseTransition, stereotypes);
+                        stereotypeMap.put(baseState, stereotypes);
                     }
                     stereotypes.add(profileAndStereotype[1]);
                 }

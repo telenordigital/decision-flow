@@ -3,8 +3,8 @@ package com.telenordigital.decisionflow;
 import com.telenordigital.decisionflow.DecisionFlowDescriber.ElementDescriptor;
 import java.util.List;
 
-public interface Decision<T> extends ElementDescriptor {
-    T getPayload();
+public interface Decision<P> extends ElementDescriptor {
+    P getPayload();
     List<ElementDescriptor> getDecisionPath();
-    List<Decision<T>> getDecisions();
+    List<Decision<P>> getDecisions();
 }

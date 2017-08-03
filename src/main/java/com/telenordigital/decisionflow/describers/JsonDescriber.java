@@ -68,7 +68,7 @@ public class JsonDescriber implements DecisionFlowDescriber {
         private String id;
         private String name;
         private ElementType type;
-        private Map<String, Object> attributes;
+        private Map<String, ?> attributes;
         private String expression;
         private String sourceNodeId;
         private String destinationNodeId;
@@ -126,7 +126,7 @@ public class JsonDescriber implements DecisionFlowDescriber {
         }
 
         @Override
-        public Map<String, Object> getAttributes() {
+        public Map<String, ?> getAttributes() {
             return attributes;
         }
 
