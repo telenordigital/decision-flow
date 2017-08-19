@@ -17,7 +17,7 @@ import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
 
-public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
+public final class DecisionFlow<C, P> implements DecisionMachine<C, P> {
 
     private InitialNode initialNode = null;
     private final Map<String, AbstractNode> nodeMap = new HashMap<>();
@@ -26,7 +26,7 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
         load(describer);
     }
 
-    public static <C, P> DecisionFlow<C, P> getInstance(final DecisionFlowDescriber describer) {
+    public static <C, P> DecisionMachine<C, P> getInstance(final DecisionFlowDescriber describer) {
         return new DecisionFlow<>(describer);
     }
 
@@ -39,10 +39,6 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
     @Override
     public List<Decision<P>> getDecisions(final C context) {
         return getDecisions(context, false);
-    }
-
-    public Decision<P> continueFrom(final Decision<P> decision, final C context) {
-        return continueFrom(context, decision);
     }
 
     public Decision<P> continueFrom(final String decisionId, final C context) {
@@ -118,12 +114,10 @@ public class DecisionFlow<C, P> implements DecisionMachine<C, P> {
                 return decisions;
             }
         };
-        return continueFrom(context, fakeDecision);
+        return continueFrom(fakeDecision, context);
     }
 
-    private Decision<P> continueFrom(
-            final C context,
-            final Decision<P> decision) {
+    public Decision<P> continueFrom(final Decision<P> decision, final C context) {
 
         final AbstractNode node = nodeMap.get(decision.getId());
         if (node == null) {

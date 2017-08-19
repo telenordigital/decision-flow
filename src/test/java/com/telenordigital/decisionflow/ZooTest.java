@@ -25,7 +25,7 @@ public class ZooTest {
     }
 
     @Parameters
-    public static List<DecisionFlow<AnimalDescription, Animal>> flowsToTest() {
+    public static List<DecisionMachine<AnimalDescription, Animal>> flowsToTest() {
         return Arrays.asList(
                 ZOO_PAPYRUS_FLOW,
                 ZOO_PAPYRUS_JSON_FLOW,
@@ -40,10 +40,10 @@ public class ZooTest {
     private static final DecisionFlowDescriber ZOO_PAPYRUS_JSON_DESCRIBER = JsonDescriber.getInstance(
             ZOO_PAPYRUS_DESCRIBER);
 
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPYRUS_FLOW =
+    private static DecisionMachine<AnimalDescription, Animal> ZOO_PAPYRUS_FLOW =
             DecisionFlow.getInstance(ZOO_PAPYRUS_DESCRIBER);
 
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_PAPYRUS_JSON_FLOW =
+    private static DecisionMachine<AnimalDescription, Animal> ZOO_PAPYRUS_JSON_FLOW =
             DecisionFlow.getInstance(ZOO_PAPYRUS_JSON_DESCRIBER);
 
     private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_DESCRIBER = VisualParadigm.getInstance(
@@ -52,10 +52,10 @@ public class ZooTest {
     private static final DecisionFlowDescriber ZOO_VISUAL_PARADIGM_JSON_DESCRIBER = JsonDescriber
             .getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
 
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_FLOW =
+    private static DecisionMachine<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_FLOW =
             DecisionFlow.getInstance(ZOO_VISUAL_PARADIGM_DESCRIBER);
 
-    private static DecisionFlow<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_JSON_FLOW =
+    private static DecisionMachine<AnimalDescription, Animal> ZOO_VISUAL_PARADIGM_JSON_FLOW =
             DecisionFlow.getInstance(ZOO_VISUAL_PARADIGM_JSON_DESCRIBER);
 
     enum Environment {WATER, LAND}
