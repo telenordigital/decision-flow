@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:zoo="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0" xsi:schemaLocation="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0 zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA">
+  <uml:Model xmi:id="_czqhQG4KEeeB__kC6w5TrA" name="zoo">
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_c0BGkG4KEeeB__kC6w5TrA" name="DecisionFlow">
+      <region xmi:type="uml:Region" xmi:id="_c0UokG4KEeeB__kC6w5TrA" name="Region1">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_tvT4IG4MEeeB__kC6w5TrA" annotatedElement="_YP3wgG4LEeeB__kC6w5TrA">
+          <body>Small aquatic animals will lead to a dead end, as no decision will be returned</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_EN42oG4QEeeB__kC6w5TrA" annotatedElement="_3_2McG4PEeeB__kC6w5TrA">
+          <body>Multiple decisions are also possible. In Snowball, this could be used to return an array of screens, eliminating the need for grouping them in flows</body>
+        </ownedComment>
+        <transition xmi:type="uml:Transition" xmi:id="_Q0Q6kG4LEeeB__kC6w5TrA" source="_CdMuYG4LEeeB__kC6w5TrA" target="_Gx5dwG4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_cKvqoG4LEeeB__kC6w5TrA" name="water" source="_Gx5dwG4LEeeB__kC6w5TrA" target="_YP3wgG4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_Jw2swG4MEeeB__kC6w5TrA" name="heavy" source="_YP3wgG4LEeeB__kC6w5TrA" target="_y48g4G4LEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_lx9AAG4MEeeB__kC6w5TrA" source="_y48g4G4LEeeB__kC6w5TrA" target="_d0rAYG4MEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_TTQaoG4NEeeB__kC6w5TrA" source="_Gx5dwG4LEeeB__kC6w5TrA" target="_AFHx0G4NEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_fDS6MG4NEeeB__kC6w5TrA" name="mammal" source="_AFHx0G4NEeeB__kC6w5TrA" target="_YnXYkG4NEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_7zCcIG4NEeeB__kC6w5TrA" name="primate" source="_YnXYkG4NEeeB__kC6w5TrA" target="_wmXvYG4NEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_X_IecG4OEeeB__kC6w5TrA" name="canReadTrue" source="_wmXvYG4NEeeB__kC6w5TrA" target="_NPxYwG4OEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_rtnbQG4OEeeB__kC6w5TrA" source="_wmXvYG4NEeeB__kC6w5TrA" target="_hAyFIG4OEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_6I-RkG4OEeeB__kC6w5TrA" source="_hAyFIG4OEeeB__kC6w5TrA" target="_v73kYG4OEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_GSH0sG4PEeeB__kC6w5TrA" name="rodent" source="_YnXYkG4NEeeB__kC6w5TrA" target="_AjlkkG4PEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_mjQZwG4PEeeB__kC6w5TrA" source="_YnXYkG4NEeeB__kC6w5TrA" target="_cpm0EG4PEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_CAl4oG4QEeeB__kC6w5TrA" source="_AFHx0G4NEeeB__kC6w5TrA" target="_twrCsG4PEeeB__kC6w5TrA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_DFu7wG4QEeeB__kC6w5TrA" source="_twrCsG4PEeeB__kC6w5TrA" target="_3_2McG4PEeeB__kC6w5TrA"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_CdMuYG4LEeeB__kC6w5TrA" name="Init"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_Gx5dwG4LEeeB__kC6w5TrA" name="environment" kind="choice"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_YP3wgG4LEeeB__kC6w5TrA" name="weight" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_y48g4G4LEeeB__kC6w5TrA" name="BlueWhale"/>
+        <subvertex xmi:type="uml:State" xmi:id="_d0rAYG4MEeeB__kC6w5TrA" name="WhaleShark"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_AFHx0G4NEeeB__kC6w5TrA" name="animalClass" kind="choice"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_YnXYkG4NEeeB__kC6w5TrA" name="animalOrder" kind="choice"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_wmXvYG4NEeeB__kC6w5TrA" name="canRead" kind="choice"/>
+        <subvertex xmi:type="uml:State" xmi:id="_NPxYwG4OEeeB__kC6w5TrA" name="human"/>
+        <subvertex xmi:type="uml:State" xmi:id="_hAyFIG4OEeeB__kC6w5TrA" name="gorilla"/>
+        <subvertex xmi:type="uml:State" xmi:id="_v73kYG4OEeeB__kC6w5TrA" name="lemur"/>
+        <subvertex xmi:type="uml:State" xmi:id="_AjlkkG4PEeeB__kC6w5TrA" name="rat"/>
+        <subvertex xmi:type="uml:State" xmi:id="_cpm0EG4PEeeB__kC6w5TrA" name="elephant"/>
+        <subvertex xmi:type="uml:State" xmi:id="_twrCsG4PEeeB__kC6w5TrA" name="cobra"/>
+        <subvertex xmi:type="uml:State" xmi:id="_3_2McG4PEeeB__kC6w5TrA" name="tarantula"/>
+      </region>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ChXnR24MEeeB__kC6w5TrA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChY1YG4MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="zoo.profile.uml#_ChWZIW4MEeeB__kC6w5TrA"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="zoo.profile.uml#_ChFTYG4MEeeB__kC6w5TrA"/>
+    </profileApplication>
+  </uml:Model>
+  <zoo:Animal xmi:id="_ChaqkG4MEeeB__kC6w5TrA" base_State="_y48g4G4LEeeB__kC6w5TrA" description="The largest anymal on Earth"/>
+  <zoo:Animal xmi:id="_d0tcoG4MEeeB__kC6w5TrA" base_State="_d0rAYG4MEeeB__kC6w5TrA" description="Dont confuse it with a whale"/>
+  <zoo:Animal xmi:id="_RbZrsG4OEeeB__kC6w5TrA" base_State="_NPxYwG4OEeeB__kC6w5TrA" legCount="2" description="The naked ape"/>
+  <zoo:Animal xmi:id="_muRMYG4OEeeB__kC6w5TrA" base_State="_hAyFIG4OEeeB__kC6w5TrA" legCount="2"/>
+  <zoo:Animal xmi:id="_0jgd4G4OEeeB__kC6w5TrA" base_State="_v73kYG4OEeeB__kC6w5TrA" legCount="4" description="Endemic to the island of Madagascar"/>
+  <zoo:Animal xmi:id="_Dfxo4G4PEeeB__kC6w5TrA" base_State="_AjlkkG4PEeeB__kC6w5TrA" legCount="4" description="They say the most adaptable mammal on Earth"/>
+  <zoo:Animal xmi:id="_gpei8G4PEeeB__kC6w5TrA" base_State="_cpm0EG4PEeeB__kC6w5TrA" legCount="4" trunkCount="1" description="Huge, dark and wrinkled, as opposed to an aspirin"/>
+  <zoo:Animal xmi:id="_xh878G4PEeeB__kC6w5TrA" base_State="_twrCsG4PEeeB__kC6w5TrA" description="One of the most feared snakes"/>
+  <zoo:Animal xmi:id="_8Mxf4G4PEeeB__kC6w5TrA" base_State="_3_2McG4PEeeB__kC6w5TrA" legCount="8" description="The most feared spider on Earth"/>
+</xmi:XMI>

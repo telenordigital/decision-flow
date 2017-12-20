@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ChFTYG4MEeeB__kC6w5TrA" name="zoo" metaclassReference="_ChHvoG4MEeeB__kC6w5TrA _DzYngHEnEeedLtR2afHFEg _SKjJ0HaXEee3fa5sG6Jxxg">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChWZIG4MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_SK0PkHaXEee3fa5sG6Jxxg" name="zoo" nsURI="http:///schemas/zoo/_SKxMQHaXEee3fa5sG6Jxxg/2" nsPrefix="zoo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SK2EwHaXEee3fa5sG6Jxxg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SK2EwXaXEee3fa5sG6Jxxg" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SK2EwnaXEee3fa5sG6Jxxg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SK2Ew3aXEee3fa5sG6Jxxg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SK2ExHaXEee3fa5sG6Jxxg" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SK2ExXaXEee3fa5sG6Jxxg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SK0PkXaXEee3fa5sG6Jxxg" name="Animal">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SK0PknaXEee3fa5sG6Jxxg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ChGhgG4MEeeB__kC6w5TrA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SK0Pk3aXEee3fa5sG6Jxxg" name="base_State" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//State"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SK0PlXaXEee3fa5sG6Jxxg" name="legCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SK0Pl3aXEee3fa5sG6Jxxg" name="trunkCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_SK0PmXaXEee3fa5sG6Jxxg" name="description" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SK0Pm3aXEee3fa5sG6Jxxg" name="always">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SK0PnHaXEee3fa5sG6Jxxg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Dbu8gHEnEeedLtR2afHFEg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SK0PnXaXEee3fa5sG6Jxxg" name="base_Transition" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Transition"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_SK0Pn3aXEee3fa5sG6Jxxg" name="Random">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SK0PoHaXEee3fa5sG6Jxxg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_R1Mk4HaXEee3fa5sG6Jxxg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_SK0PoXaXEee3fa5sG6Jxxg" name="base_Pseudostate" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Pseudostate"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_DzeHEHEnEeedLtR2afHFEg" name="zoo" nsURI="http:///schemas/zoo/_Dzbq0HEnEeedLtR2afHFEg/1" nsPrefix="zoo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dzf8QXEnEeedLtR2afHFEg" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dzf8QnEnEeedLtR2afHFEg" key="Version" value="0.0.2"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dzf8Q3EnEeedLtR2afHFEg" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dzf8RHEnEeedLtR2afHFEg" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dzf8RXEnEeedLtR2afHFEg" key="Date" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dzf8RnEnEeedLtR2afHFEg" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DzeHEXEnEeedLtR2afHFEg" name="Animal">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DzeHEnEnEeedLtR2afHFEg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ChGhgG4MEeeB__kC6w5TrA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_DzeHE3EnEeedLtR2afHFEg" name="base_State" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//State"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_DzeHFXEnEeedLtR2afHFEg" name="legCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_DzeHF3EnEeedLtR2afHFEg" name="trunkCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_DzeHGXEnEeedLtR2afHFEg" name="description" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_DzeHG3EnEeedLtR2afHFEg" name="always">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DzeHHHEnEeedLtR2afHFEg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_Dbu8gHEnEeedLtR2afHFEg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_DzeHHXEnEeedLtR2afHFEg" name="base_Transition" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Transition"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+    <contents xmi:type="ecore:EPackage" xmi:id="_ChWZIW4MEeeB__kC6w5TrA" name="zoo" nsURI="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0" nsPrefix="zoo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChXnQW4MEeeB__kC6w5TrA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnQm4MEeeB__kC6w5TrA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnQ24MEeeB__kC6w5TrA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRG4MEeeB__kC6w5TrA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRW4MEeeB__kC6w5TrA" key="Date" value="7/21/17 1:59 PM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRm4MEeeB__kC6w5TrA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_ChWZIm4MEeeB__kC6w5TrA" name="Animal">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChWZI24MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ChGhgG4MEeeB__kC6w5TrA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ChWZJG4MEeeB__kC6w5TrA" name="base_State" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//State"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZJm4MEeeB__kC6w5TrA" name="legCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZKG4MEeeB__kC6w5TrA" name="trunkCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZKm4MEeeB__kC6w5TrA" name="description" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_ChHvoG4MEeeB__kC6w5TrA">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#State"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_DzYngHEnEeedLtR2afHFEg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Transition"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_SKjJ0HaXEee3fa5sG6Jxxg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Pseudostate"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ChGhgG4MEeeB__kC6w5TrA" name="Animal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChI9wm4MEeeB__kC6w5TrA" name="base_State" association="_ChI9wG4MEeeB__kC6w5TrA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#State"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0G4MEeeB__kC6w5TrA" name="legCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0W4MEeeB__kC6w5TrA" name="trunkCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0m4MEeeB__kC6w5TrA" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ChI9wG4MEeeB__kC6w5TrA" name="State_Animal" memberEnd="_ChI9wW4MEeeB__kC6w5TrA _ChI9wm4MEeeB__kC6w5TrA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ChI9wW4MEeeB__kC6w5TrA" name="extension_Animal" type="_ChGhgG4MEeeB__kC6w5TrA" aggregation="composite" association="_ChI9wG4MEeeB__kC6w5TrA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_Dbu8gHEnEeedLtR2afHFEg" name="always">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_DzZOkHEnEeedLtR2afHFEg" name="base_Transition" association="_DzYngXEnEeedLtR2afHFEg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Transition"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_DzYngXEnEeedLtR2afHFEg" name="Transition_always" memberEnd="_DzYngnEnEeedLtR2afHFEg _DzZOkHEnEeedLtR2afHFEg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_DzYngnEnEeedLtR2afHFEg" name="extension_always" type="_Dbu8gHEnEeedLtR2afHFEg" aggregation="composite" association="_DzYngXEnEeedLtR2afHFEg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_R1Mk4HaXEee3fa5sG6Jxxg" name="Random">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_SKk_AXaXEee3fa5sG6Jxxg" name="base_Pseudostate" association="_SKkX8HaXEee3fa5sG6Jxxg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Pseudostate"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_SKkX8HaXEee3fa5sG6Jxxg" name="Pseudostate_Random" memberEnd="_SKk_AHaXEee3fa5sG6Jxxg _SKk_AXaXEee3fa5sG6Jxxg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_SKk_AHaXEee3fa5sG6Jxxg" name="extension_Random" type="_R1Mk4HaXEee3fa5sG6Jxxg" aggregation="composite" association="_SKkX8HaXEee3fa5sG6Jxxg"/>
+  </packagedElement>
+</uml:Profile>

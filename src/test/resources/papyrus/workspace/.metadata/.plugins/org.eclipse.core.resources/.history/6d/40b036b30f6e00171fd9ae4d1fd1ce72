@@ -1,0 +1,15 @@
+#Fri Jul 21 14:23:41 CEST 2017
+_label_zoo__DecisionFlow__Region1__BlueWhale=getAnimal("BLUE_WHALE")
+_label_zoo__DecisionFlow__Region1__heavy=true
+_label_zoo__DecisionFlow__Region1__mammal=getAnimalClass("MAMMAL")
+_label_zoo__DecisionFlow__Region1__WhaleShark=getAnimal("WHALE_SHARK")
+_label_zoo__DecisionFlow__Region1__rodent=getAnimalOrder("RODENT")
+_label_zoo__DecisionFlow__Region1__primate=getAnimalOrder("PRIMATE")
+_label_zoo__DecisionFlow__Region1__water=getEnvironment("WATER")
+_label_zoo__DecisionFlow__Region1__canReadTrue=true
+_label_zoo__DecisionFlow__Region1__rat=getAnimal("RAT")
+_label_zoo__DecisionFlow__Region1__human=getAnimal("HUMAN")
+_label_zoo__DecisionFlow__Region1__weight=weight > 45000
+_label_zoo__DecisionFlow__Region1__gorilla=getAnimal("GORILLA")
+_label_zoo__DecisionFlow__Region1__canRead=intellectualAbilities.canRead
+_label_zoo__DecisionFlow__Region1__lemur=getAnimal("LEMUR")

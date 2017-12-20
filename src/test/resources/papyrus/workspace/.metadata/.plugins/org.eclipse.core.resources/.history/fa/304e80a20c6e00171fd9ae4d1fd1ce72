@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_czqhQG4KEeeB__kC6w5TrA" name="zoo">
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_c0BGkG4KEeeB__kC6w5TrA" name="DecisionFlow">
+    <region xmi:type="uml:Region" xmi:id="_c0UokG4KEeeB__kC6w5TrA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_Q0Q6kG4LEeeB__kC6w5TrA" source="_CdMuYG4LEeeB__kC6w5TrA" target="_Gx5dwG4LEeeB__kC6w5TrA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_cKvqoG4LEeeB__kC6w5TrA" name="water" source="_Gx5dwG4LEeeB__kC6w5TrA" target="_YP3wgG4LEeeB__kC6w5TrA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_CdMuYG4LEeeB__kC6w5TrA" name="Init"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Gx5dwG4LEeeB__kC6w5TrA" name="environment" kind="choice"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_YP3wgG4LEeeB__kC6w5TrA" name="weight" kind="choice"/>
+    </region>
+  </packagedElement>
+</uml:Model>

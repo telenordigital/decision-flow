@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ChFTYG4MEeeB__kC6w5TrA" name="zoo" metaclassReference="_ChHvoG4MEeeB__kC6w5TrA">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChWZIG4MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_ChWZIW4MEeeB__kC6w5TrA" name="zoo" nsURI="http:///schemas/zoo/_ChUj8G4MEeeB__kC6w5TrA/0" nsPrefix="zoo">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChXnQW4MEeeB__kC6w5TrA" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnQm4MEeeB__kC6w5TrA" key="Version" value="0.0.1"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnQ24MEeeB__kC6w5TrA" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRG4MEeeB__kC6w5TrA" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRW4MEeeB__kC6w5TrA" key="Date" value="7/21/17 1:59 PM"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ChXnRm4MEeeB__kC6w5TrA" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_ChWZIm4MEeeB__kC6w5TrA" name="Animal">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ChWZI24MEeeB__kC6w5TrA" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_ChGhgG4MEeeB__kC6w5TrA"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_ChWZJG4MEeeB__kC6w5TrA" name="base_State" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//State"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZJm4MEeeB__kC6w5TrA" name="legCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZKG4MEeeB__kC6w5TrA" name="trunkCount" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Integer"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_ChWZKm4MEeeB__kC6w5TrA" name="description" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_ChHvoG4MEeeB__kC6w5TrA">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#State"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_ChGhgG4MEeeB__kC6w5TrA" name="Animal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChI9wm4MEeeB__kC6w5TrA" name="base_State" association="_ChI9wG4MEeeB__kC6w5TrA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#State"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0G4MEeeB__kC6w5TrA" name="legCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0W4MEeeB__kC6w5TrA" name="trunkCount">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ChJk0m4MEeeB__kC6w5TrA" name="description">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_ChI9wG4MEeeB__kC6w5TrA" name="State_Animal" memberEnd="_ChI9wW4MEeeB__kC6w5TrA _ChI9wm4MEeeB__kC6w5TrA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_ChI9wW4MEeeB__kC6w5TrA" name="extension_Animal" type="_ChGhgG4MEeeB__kC6w5TrA" aggregation="composite" association="_ChI9wG4MEeeB__kC6w5TrA"/>
+  </packagedElement>
+</uml:Profile>
