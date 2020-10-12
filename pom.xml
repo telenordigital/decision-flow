@@ -126,6 +126,6 @@
     <properties>
         <spring.version>4.3.10.RELEASE</spring.version>
         <jackson.version>[2.9.9,)</jackson.version>
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 </project>
